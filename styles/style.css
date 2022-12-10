@@ -1,0 +1,1135 @@
+/*Обнуление*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+}
+/* настройки body__________________________________________*/
+.body {
+	font-family: Nunito Sans, Arial;
+	background-color: #e5e5e5;
+}
+.__white {
+	color: white;
+}
+
+
+
+/* настройки многократно используемого container */
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+/* настройки многократно используемого button */
+.button {
+	background: #e3b873;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+	border-radius: 2px;
+	outline: 0;
+	border: 0;
+	padding: 13px 33px;
+	color: white;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+/* настройки logo */
+.logo {
+	color: #e3b873;
+}
+
+
+
+
+/*стили для header_______________________________________________________________ */
+.header {
+	background-color: black;
+}
+
+/* блок для содержимого headwer */
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	height: 83px;
+	align-items: center;
+}
+/* блок навигации header */
+.header-navigation {
+	list-style: none;
+	display: flex;
+}
+.header-navigation__item {
+	margin-right: 47px;
+	list-style: none;
+}
+
+.header-navigation__link {
+	text-decoration: none;
+	color: white;
+}
+
+.tel {
+	color: #e3b873;
+	text-decoration: underline;
+}
+.hero {
+	background-image: url("../images/hero.jpg");
+	background-size: cover;
+	height: 707px;
+	padding-top: 194px;
+	position: relative;
+}
+
+.hero-overlay {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-container {
+	position: relative;
+	z-index: 1;
+}
+/* cстили блока со списком городов */
+.cities{
+display: inline-block;
+margin-left: 50%;
+min-width: 623px;
+position: absolute;
+transform: translate(0%, 100%);
+z-index: 10;
+}
+/* cстили блока со списком городов после наведения мышкой*/
+.cities a{
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	margin-right: 60px;
+}
+.cities a:hover{
+	color: #e3b873;
+	border-bottom: 1px solid;
+}
+.hero__text {
+	max-width: 514px;
+}
+
+.title {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 53px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 23px;
+}
+
+.text-color {
+	color: #e3b873;
+}
+
+.subtitle {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 36px;
+
+	color: #ffffff;
+	text-align: left;
+	margin-bottom: 37px;
+}
+
+.button-transparent {
+	background: transparent;
+	border: 1px solid;
+	margin-left: 20px;
+}
+/* стили секции вариантов ремонта */
+.apartment {
+	background-color: #131313;
+	padding-bottom: 257px;
+	padding-top: 107px;
+	
+}
+/* стили ссылок для перелючения слайдов секции вариантов ремонта */
+#rostov-on-don:targer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 1em;
+	max-width: 1171px;
+}
+#sochi:targer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 1em;
+	max-width: 1171px;
+}
+#rostov_admiral:targer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 1em;
+	max-width: 1171px;
+}
+/* стили контейнера слайдера секции вариантов ремонта */
+.apartment-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 1em;
+	max-width: 1171px;
+}
+/* стили текстового блока с описанием параметров ремонта секции вариантов ремонта */
+.apartment__text {
+	display: flex;
+	flex-direction: column;
+	max-width: 442px;
+}
+/* стили заголовков описания секции вариантов ремонта */
+.apartment__title {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+	text-transform: uppercase;
+	color: #e3b873;
+}
+/* стили параграфа с общим описанием секции вариантов ремонта */
+.apartment__paragraf {
+	margin-top: 34px;
+	margin-bottom: 57px;
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 27px;
+	color: #ffffff;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 27px;
+	color: #FFFFFF;
+}
+/* стили описания параметров ремонта секции вариантов ремонта */
+.apartment-description {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 67px;
+	grid-row-gap: 35px;
+}
+/* стили заголовков секции вариантов ремонта */
+.apartment-description__title {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	margin-bottom: 9px;
+	color: #e3b873;
+}
+/* стили параграфов секции вариантов ремонта */
+.appartment-description__paragraf {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 21px;
+	color: #ffffff;
+	max-width: 100px;
+}
+/* стили изображений слайдера */
+.apartment__img {
+	background-size: cover;
+	height: 482px;
+	max-width: 679px;
+}
+/* изображение ростов адмирал */
+.img-rostov_admiral {
+	background-image: url("../images/apartment_rostov-on-don.png");
+}
+/* изображение сочи */
+.img-sochi {
+	background-image: url("../images/apartment_sochi.png");
+}
+/* ------------------------------------------------------------------------------------------------ */
+.swiper-wrapper {
+	margin: 90px auto;
+}
+
+.swiper-slider {
+}
+.swiper-slider-active{
+}
+.swiper-pagination {
+
+}
+.swiper-navigation__navigation-block{
+	display: flex;
+	align-self: center;
+	position: absolute;
+	top: 550px;
+	right: 65vw; 
+	width: 206px;
+	height: auto;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+	background-color: #e3b873;
+}
+.swiper-button-next::after{
+	right: 65vw;
+	padding: 50px; 
+	width: auto;
+}
+.swiper-button-prev::after{
+	left: 0vw; 
+	padding: 50px; 
+	width: auto;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+content: 'next';
+}
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+ content: 'next';
+}
+.swiper-button-prev,
+.swiper-button-next {
+position: absolute;
+/* width: calc(var(--swiper-navigation-size) / 13 * 42);  */
+/* height: var(--swiper-navigation-size); */
+ /* margin-top: calc(-1 * var(--swiper-navigation-size) / 2); */
+z-index: 10;
+cursor: pointer;
+/* margin: 10px; */
+/* display: flex;  */
+align-items: center;
+justify-content: center;
+/* opacity: 0; */
+background: url("../images/prev.png") no-repeat center;
+width: 41px;
+height: 13px;
+background-size: 41px 13px;
+top: 250px;
+/* overflow: hidden; */
+}
+/* стили стрелки вправо слайдера */
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-prev:after {
+/* background: url("../images/prev.png") no-repeat center; */
+width: 42px;
+height: 13px;
+opacity: 0;
+}
+/* стили стрелки вправо слайдера */
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-next:after {
+background: url("../images/next.png") no-repeat center;
+width: 42px;
+height: 13px;
+/* opacity: 0; */
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* стили повторяющегося блока с заголовком и изображением*/
+.title-repeat {
+	display: block;
+	max-width: 196px;
+	margin: 0 auto;
+	margin-bottom: 31px;
+}
+/* стили блока декоративных изображений*/
+.title-repeat__top {
+	max-width: 114px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+/* стили повторяющихся заголовков*/
+.title-repeat__text {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 13px;
+}
+
+/* стили декоративных изображений*/
+.title-repeat__img {
+	margin: 0 5px;
+}
+/* стили декоративных линий*/
+.line {
+	border-bottom: 2px solid #e3b873;
+	padding: 0 1.3em;
+	margin: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* стили секции online control */
+.camera-control {
+	max-width: 817px;
+	margin: 0 auto;
+}
+/* стили ограничевающего контейнера секции online control */
+.camera-control__conteiner {
+	display: flex;
+	flex-direction: column;
+}
+/* стили изображения секции online control */
+.camera-control__img {
+	max-width: 817px;
+	height: 434px;
+	margin-top: -240px;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/camera-control.png");
+}
+/* стили декоративного элемента секции online control */
+.line-camera {
+	border-bottom: 2px solid #e3b873;
+	padding: 0 2em;
+	margin-top: 62px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 34px;
+}
+/* стили paragraf секции online control */
+.__paragraf {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 37px;
+	text-align: center;
+	max-width: 681px;
+	margin: 0 auto 92px;
+	color: #363636;
+}
+/* стили фонрмы ввода секции online control */
+.camera-control__form {
+	display: flex;
+	margin-bottom: 33px;
+	justify-content: space-around;
+}
+/* стили полей ввода секции online control */
+.phone-form__input, .name-form__input{
+	padding-top: 7px;
+	padding-bottom: 8px;
+	margin-right: 58px;
+	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+	max-width: 231px;
+}
+/* стили названий полей ввода секции online control */
+.phone-form__label, .name-form__label{
+	color: rgba(54, 54, 54, 0.5);
+}
+/* стили placeholder полей ввода секции online control */
+.phone-form__input::placeholder, .name-form__input::placeholder{
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 23px;
+color: #363636;
+}
+/* общие стили кнопки формы */
+.button-form {
+	width: 200px;
+	background-color: #e3b873;
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 27px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: #e3b873;
+	box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 2px;
+}
+/* стилизация чекбокса */
+.checkbox {
+	margin: 0 auto;
+	margin-bottom: 76px;
+	display: flex;
+	text-align: center;
+	justify-content: c;
+	align-items: end;
+	max-width: 282px;
+}
+.__checkbox-check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.__checkbox-check + label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+.__checkbox-check + label::before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #adb5bd;
+	background-color: #e3b873;
+	border-radius: 0.25em;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+.__checkbox-check:checked + label::before {
+	border-color: #e3b873;
+	background-color: #e3b873;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+/* ------------------------------------------------------------------------------------------------ */
+/*стили секции change-types */
+.constract__container {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 31px;
+}
+
+/*стили тизображения блока карточек с типами ремонтов */
+.constract__img {
+	background-size: cover;
+	max-width: 392px;
+}
+/*стили блока карточек с типами ремонтов */
+.constract__block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 376px;
+}
+/*стили кнопки блока карточек с типами ремонтов */
+.constract__button {
+	align-self: start;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+	transform: translate(0%, -50%);
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	background: #e3b873;
+	box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+	color: #ffffff;
+}
+/*стили заголовка текстового блока карточек с типами ремонтов */
+.constract__head {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #363636;
+}
+/*стили списка блока карточек с типами ремонтов */
+ul li {
+	list-style: disc;
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 27px;
+	color: #959595;
+}
+/*стили текстового блока карточек с типами ремонтов */
+.constract__text-container {
+	background: #ffffff;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+	width: 330px;
+	height: 286px;
+	margin-top: -127px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 15%;
+}
+/* ------------------------------------------------------------------------------------------------ */
+/*стили секции call-the-measurer */
+.call-the-measurer{
+	position: relative;
+	display: flex;
+}
+/*стили фотонового изображения секции call-the-measurer */
+.background-image{
+margin-bottom: 151px;
+}
+/*стили ограничивающего контейнера формы ввода секции call-the-measurer */
+.call-the-measurer__form-container{
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	position: absolute;
+	right: 0;
+	padding-top: 60px;
+	width: 1100px;
+}
+/*стили формы секции call-the-measurer */
+.call-the-measurer__form{
+	background: #181818;
+	width: 506px;
+	height: 509px;
+	display: flex;
+	flex-direction: column;
+}
+/*стили формы ввода имени секции call-the-measurer */
+.call-the-measurer__name-form{
+	margin: auto;
+}
+/*стили заголовка формы секции call-the-measurer */
+.call-the-measurer__h3{
+width: 297px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+margin: 28px auto 39px;
+}
+/*отступы поля ввода телефона секции call-the-measurer */
+.call-the-measurer__phone{
+	margin: 48px auto;
+}
+/*стили поля ввода секции call-the-measurer */
+.call-the-measurer__input{
+	width: 408px;
+	background: #181818;
+	border-bottom: 1px solid white;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 23px;
+	color: #FFFFFF;
+}
+/*стили placeholder поля ввода секции call-the-measurer */
+.call-the-measurer__input::placeholder{
+	color:#ffffff;
+}
+/*стили названия поля ввода секции call-the-measurer */
+.call-the-measurer__label{
+	color: rgba(255, 255, 255, 0.5);
+}
+/*стили чекбокса секции call-the-measurer */
+.call-the-measurer__checkbox{
+	color: #ffffff;
+	display: flex;
+	max-width: 254px;
+	margin-top: 16px;
+	margin-bottom: 39px;
+}
+/*стили кнопки формы секции call-the-measurer */
+.call-the-measurer__button-form{
+width: 213px;
+height: 51px;
+background: #E3B873;
+box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+margin: auto 49px 27px 244px;
+}
+
+/* кастомные стили списка секции call-the-measurer */
+.call-the-mesurer__ol {
+	counter-reset: num; 
+	list-style: none; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80%;
+	font: 14px "Trebuchet MS", "Lucida Sans";
+	padding: 0;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	}
+	/* кастомные стили списка секции call-the-measurer */
+	.call-the-mesurer__ol li {
+	counter-increment: num;
+	position: relative;
+	display: block;
+	padding-left: 37px;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: .3s ease-out;
+	}
+	/* кастомные стили списка секции call-the-measurer */
+	.call-the-mesurer__ol li:hover {background: #E9E4E0;}
+	.call-the-mesurer__ol li:hover:before {transform: rotate(360deg);}
+	.call-the-mesurer__ol li:before {
+	content: counter(li);
+	content: counter(num);
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.6em;
+	background: #e3b873;
+	height: 50px;
+	width: 50px;
+	line-height: 2.5em;
+	color: #FFFFFF;
+	background: #E3B873;
+	border: 8px solid #FFFFFF;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .3s ease-out;
+	}
+	ol li:nth-child(-n+9):before {
+		content: "0" counter(num);
+	}
+
+
+/* цвет фона для декоративного изображения секции call-the-measurer */
+.call-the-measurer__round-1{
+	background:#e3b873;
+}
+/* стили закругления блока с декоративным изображением секции call-the-measurer */
+.call-the-measurer__round-1-img{
+	transform: translate(45%, 50%);
+}
+/* стили блока с текстом и декоративным изображением секции call-the-measurer */
+.call-the-measurer__circle-and-text{
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	max-width: 441px;
+}
+/* стили текста блока с декоративным изображением секции call-the-measurer */
+.call-the-measurer__text{
+	max-width: 220px;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #E3B873;
+	text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* стили секции с отзывами */
+.our-clients{
+	margin-bottom: -100px;
+}
+/* стилиограничевающего контейнера секции с отзывами */
+.constract__container-our-clients {
+	padding-bottom: 125px;
+}
+/* стили заглавного параграфа со статистическими данными блока с отзывами */
+.our-clients__paragraf {
+	max-width: 375px;
+}
+/* стили блока с данными клиента блока с отзывами */
+.person {
+	padding-top: 20px;
+	padding-left: 24px;
+	display: flex;
+	background: #ffffff
+	align-items: center;
+}
+/* стили скругления контейнера с фотографией клиента блока с отзывами*/
+.round-1 {
+	margin-right: 23px;
+	width: 76px;/* Ширина и высота */
+	height: 76px; 
+	border-radius: 50%; /* Превращаем в круг */
+	background-size: auto 300px; /* Высота фотографии равна высоте элемента */
+}
+/* стили имени клиента блока с отзывами */
+.person__name {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: #181818;
+	max-width: 178px;
+}
+/* стили текста контейнера параграфа блока с отзывами */
+.constract__text-our-clients {
+	margin-top: 0px;
+	width: 100%;
+	height: auto;
+	padding-left: 20px;
+	padding-right: 32px;
+	padding-bottom: 63px;
+	padding-top: 21px;
+}
+/* стили текста параграфа блока с отзывами */
+.our-clients__text {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 180%;
+	color: #959595;
+}
+/* стили параграфа блока с отзывами */
+.our-clients__text-p {
+	padding-bottom: 21px;
+}
+/* стили контейнера с блоками площади и сроков */
+.area-days {
+	background: #e3b873;
+	box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 2px;
+	color: #ffffff;
+	box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+	max-width: 294px;
+	height: 54px;
+	transform: translate(0%, -50%);
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+/* стили контейнера для блока с информацией о площади*/
+.area {
+	display: flex;
+	align-items: center;
+}
+/* стили изображения для блока с информацией о площади*/
+.area img{
+	max-width: 32px;
+	max-height: 31px;
+	margin-right: 10px;
+}
+/* отдел о сроках */
+.vl {
+	height: 54px;
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	top: 0;
+   border: 0.75px solid #FFFFFF;
+
+}
+/* стили контейнера для изображений блока с информацией о сроках */
+.list-days{
+	display: flex;
+	align-items: center;
+}
+/* стили изображения для блока с информацией о сроках */
+.list-days img{
+	max-width: 32px;
+	max-height: 31px;
+	margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* стили специального ограничивающего контейнера секции с формой для дополнительных вопросов */
+.have-any-questions__container{
+	max-width: 883px;
+	height: 445px;
+	background: #181818;
+	margin: 0 auto;
+	position: relative;
+	transform: translate(0%, 50%);
+	z-index: 2;
+}
+/* стили правого полупрозрачного изображения из секции для дополнительных вопросов */
+.have-any-questions__background-image{
+	display: flex;
+   justify-content: space-around;
+	position: absolute;
+	transform: translate(0%, 80%);
+}
+/* стили левого полупрозрачного изображения из секции для дополнительных вопросов */
+.have-any-questions__img{
+	margin-top: -150px;
+	opacity: 0.06;
+}
+/* стили правого полупрозрачного изображения из секции для дополнительных вопросов */
+.have-any-questions__img-right{
+	margin-top: -200px;
+	margin-left: 4vw;
+	opacity: 0.06;
+}
+/* стили заголовка из секции для дополнительных вопросов */
+.have-any-questions__title{
+	padding-top: 35px;
+	text-align: center;
+	width: 256px;
+	margin: 0 auto;
+}
+/* стили формы из секции для дополнительных вопросов */
+.have-any-questions__form{
+	max-width: 520px;
+	margin: 0 auto;
+}
+/* стили полей ввода из секции для дополнительных вопросов */
+.have-any-questions__input{
+	background: #181818;
+	color: white;
+	border-bottom: 1px solid white;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 23px;
+	color: #FFFFFF;
+}
+/* стили названий полей ввода из секции для дополнительных вопросов */
+.have-any-questions__label{
+	color: white;
+	background: #181818;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+}
+/* стили placeholder для полей ввода из секции для дополнительных вопросов */
+.have-any-questions__input::placeholder{
+	color: #FFFFFF;
+}
+/* стили блока  с полями ввода имени и телефона из секции для дополнительных вопросов */
+.have-any-questions__form-name-phone{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+/* стили формы из секции для дополнительных вопросов */
+.have-any-questions__question-form{
+	margin-bottom: 47px;
+}
+/* стили блока чекбокса из секции для дополнительных вопросов */
+.have-any-questions__checkbox{
+	color: #ffffff;
+	display: flex;
+	max-width: 254px;
+	margin-top: 16px;
+	margin-bottom: 39px;
+}
+
+/* стили полей ввода из секции для дополнительных вопросов */
+.have-any-questions__input{
+	padding-top: 7px;
+	padding-bottom: 8px;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 23px;
+	color: #FFFFFF;
+}
+/* дополнительные стили кнопки из секции для дополнительных вопросов*/
+.have-any-questions__button-form{
+	transform: translate(90%, 0%);
+	height: 51px;
+}
+/* стили поля для вопроса из секции для дополнительных вопросов */
+.input-question{
+	width: 100%;
+}
+/* стили текста чекбокса */
+.white-text{
+	color: white;
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* настройки контейнера изображений */
+.round-top{
+	width: 28px;
+	height: 28px; /* Ширина и высота */
+	border-radius: 50%;/* Превращаем в круг */
+	background-color: #E3B873;
+	text-align: center;
+	margin-top: 26px;
+	margin-left: 15px;
+}
+/* изображение почты */
+.round-mail{
+	transform: translate(0%, 50%);
+}
+/* изображение инстаграма */
+.round-insta{
+	transform: translate(0%, 40%);
+}
+/* настройка блока ссылок на социальные сети */
+.hero-bottom__img{
+	display: flex;
+   margin-bottom: 43px;
+}
+/* адрес */
+.hero-bottom__title{
+	display: block;
+	max-width: 590px;
+	padding-top: 274px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+/* стили перекрытия */
+.hero-bottom-container{
+	position: relative;
+	z-index: 1;
+}
+/* стили h3 секции с контактными данными */
+.hero-bottom__text{
+	width: auto;
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #E3B873;
+}
+/* стили тонирующего блока */
+.hero-bottom-overlay{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+/* стили фонового изображения блока с контактными данными */
+.hero-bottom{
+	background-image: url("../images/maps-background.jpg");
+	display: flex;
+	height: auto;
+	padding-top: 0;
+
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* встроенная карта*/
+.map-box{
+	filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
+	max-width: 925px;
+	height: 462px;
+	margin-bottom: 66px;
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* настройки подвала */
+.footer{
+	height: 133px;
+}
+.footer-content{
+	transform: translate(0%, 35%);
+}

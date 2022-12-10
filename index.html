@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<!--атрибут lang определяет язык содержимого элемента.-->
+<html lang="en">
+
+<!--метаданные-->
+
+<head>
+	<!--данная запись указывает браузеру кодировку в которой была написана данная страница - формат документа и раскладку клавиатуры-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--призывает Internet Explorer работать в определённом режиме документа-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--мeta-тег viewport сообщает браузеру о том, как именно обрабатывать размеры страницы, и изменять её масштаб-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--подключение файла стилей-->
+	<link rel="stylesheet" href="./styles/style.css" type="text/css" />
+	<!--подключение шрифтов-->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<title>Document</title>
+</head>
+
+<!--тело документа-->
+
+<body>
+	<!--шапка сайта-->
+	<header class="header">
+		<!--ограничивающий контейнер-->
+		<div class="container header-content">
+			<div class="logo">IC "Repair Design Project"</div>
+			<nav>
+				<ul class="header-navigation">
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">HOME</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">PROJECTS</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">MEASUREMENT</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">TEAM</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">REVIEWS</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">CONTACTS</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="tel" href="tel">+7 (928) 768-32-39</a>
+			<button class="button">Request a call</button>
+		</div>
+	</header>
+
+
+	<!--_______________________________________________________________________________________________________________________-->
+
+
+	<main>
+		<!--ограничивающий контейнер-->
+		<section class="hero">
+
+			<div class="container hero-container">
+
+				<!--блок с текстовой информацией-->
+				<div class="hero__text">
+					<!--заголовок-->
+					<h1 class="title">
+						Turnkey Repair in the city of
+						<!--выделение цветом части текста-->
+						<span class="text-color">Rostov-on-Don</span>
+					</h1>
+					<p class="subtitle">
+						Get ready-made turnkey repairs on time<br />
+						with work time saving up to 45 days and 20% from<br />
+						cost of materials due to the organization of work
+					</p>
+					<!--блок с кнопками-->
+					<div class="hero__buttons">
+						<button class="button">CALCULATE THE COST</button>
+						<button class="button button-transparent">
+							SUBMIT YOUR APPLICATION
+						</button>
+					</div>
+				</div>
+			</div>
+			<!--блок затемнения изображения-->
+			<div class="hero-overlay"></div>
+		</section>
+
+
+		<!--_______________________________________________________________________________________________________________________-->
+		<!-- секция со слайдером, варианты ремонтов-->
+		<section class="apartment">
+			<!--список городов-->
+			<div class="cities container">
+				<a href="#rostov_admiral">Rostov-on-Don, Admiral</a><a href="#sochi">Sochi Thieves</a><a
+					href="#rostov-on-don">Rostov-on-Don
+					Patriotic</a>
+			</div>
+			<!-- Slider main container -->
+			<div class="swiper container">
+
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide rostov_admiral" id="rostov_admiral">
+						<!-- контаинер слайда -->
+						<div class="container apartment-container">
+							<!-- текст с описанием помещения-->
+							<div class="apartment__text">
+								<!-- заголовок -->
+								<h2 class="apartment__title">
+									Completed projects
+								</h2>
+								<!-- параграф описания -->
+								<p class="apartment__paragraf">
+									Only a small part of the work performed by our company is presented on the site. For 14
+									years
+									on in
+									the construction
+									market we have made happy more than 1000 families
+								</p>
+								<!-- прочие условия -->
+								<div class="apartment-description">
+									<!-- город -->
+									<div class="apartment-description__city">
+										<h3 class="apartment-description__title">
+											City:
+										</h3>
+										<p class="appartment-description__paragraf">
+											Rostov-on-Don
+											LCD admiral
+										</p>
+									</div>
+									<!-- площадь помещения -->
+									<div class="apartment-description__area:">
+										<h3 class="apartment-description__title">
+											apartment area:
+										</h3>
+										<p class="appartment-description__paragraf">
+											81 m2
+										</p>
+									</div>
+									<!-- время ремонта -->
+									<div class="apartment-description__repair-time:">
+										<h3 class="apartment-description__title">
+											Repair time:
+										</h3>
+										<p class="appartment-description__paragraf">
+											3.5 months
+										</p>
+									</div>
+									<!-- стоимость ремонта -->
+									<div class="apartment-description__repair-cost:">
+										<h3 class="apartment-description__title">
+											Repair Cost:
+										</h3>
+										<p class="appartment-description__paragraf">
+											Upon request
+										</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="apartment__img img-rostov_admiral"> </div>
+						</div>
+					</div>
+
+
+					<div class="swiper-slide sochi" id="sochi">
+						<!-- контаинер слайда -->
+						<div class="container apartment-container">
+							<!-- текст с описанием помещения-->
+							<div class="apartment__text">
+								<!-- заголовок -->
+								<h2 class="apartment__title">
+									Completed projects
+								</h2>
+								<!-- параграф описания -->
+								<p class="apartment__paragraf">
+									Only a small part of the work performed by our company is presented on the site. For 14
+									years
+									on in
+									the construction
+									market we have made happy more than 1000 families
+								</p>
+								<!-- прочие условия -->
+								<div class="apartment-description">
+									<!-- город -->
+									<div class="apartment-description__city">
+										<h3 class="apartment-description__title">
+											City:
+										</h3>
+										<p class="appartment-description__paragraf">
+											Sochi
+										</p>
+									</div>
+									<!-- площадь помещения -->
+									<div class="apartment-description__area:">
+										<h3 class="apartment-description__title">
+											apartment area:
+										</h3>
+										<p class="appartment-description__paragraf">
+											81 m2
+										</p>
+									</div>
+									<!-- время ремонта -->
+									<div class="apartment-description__repair-time:">
+										<h3 class="apartment-description__title">
+											Repair time:
+										</h3>
+										<p class="appartment-description__paragraf">
+											3.5 months
+										</p>
+									</div>
+									<!-- стоимость ремонта -->
+									<div class="apartment-description__repair-cost:">
+										<h3 class="apartment-description__title">
+											Repair Cost:
+										</h3>
+										<p class="appartment-description__paragraf">
+											Upon request
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="apartment__img img-sochi"> </div>
+						</div>
+					</div>
+
+
+					<div class="swiper-slide rostov-on-don" id="rostov-on-don">
+						<!-- контаинер слайда -->
+						<div class="container apartment-container">
+							<!-- текст с описанием помещения-->
+							<div class="apartment__text">
+								<!-- заголовок -->
+								<h2 class="apartment__title">
+									Completed projects
+								</h2>
+								<!-- параграф описания -->
+								<p class="apartment__paragraf">
+									Only a small part of the work performed by our company is presented on the site. For 14
+									years
+									on in
+									the construction
+									market we have made happy more than 1000 families
+								</p>
+								<!-- прочие условия -->
+								<div class="apartment-description">
+									<!-- город -->
+									<div class="apartment-description__city">
+										<h3 class="apartment-description__title">
+											City:
+										</h3>
+										<p class="appartment-description__paragraf">
+											Rostov-on-Don
+											LCD admiral
+										</p>
+									</div>
+									<!-- площадь помещения -->
+									<div class="apartment-description__area:">
+										<h3 class="apartment-description__title">
+											apartment area:
+										</h3>
+										<p class="appartment-description__paragraf">
+											81 m2
+										</p>
+									</div>
+									<!-- время ремонта -->
+									<div class="apartment-description__repair-time:">
+										<h3 class="apartment-description__title">
+											Repair time:
+										</h3>
+										<p class="appartment-description__paragraf">
+											3.5 months
+										</p>
+									</div>
+									<!-- стоимость ремонта -->
+									<div class="apartment-description__repair-cost:">
+										<h3 class="apartment-description__title">
+											Repair Cost:
+										</h3>
+										<p class="appartment-description__paragraf">
+											Upon request
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="apartment__img img-rostov_admiral"></div>
+						</div>
+					</div>
+
+				</div>
+				<!-- блок навигации -->
+				<div class="swiper-navigation__navigation-block">
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination "></div>
+					<div class="swiper-button-next"></div>
+				</div>
+
+
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+
+
+
+			<!--повторяющийся заголовок с камерой-->
+			<div class="title-repeat">
+				<h3 class="title-repeat__text __white">online control</h3>
+				<div class="title-repeat__top">
+					<span class="line"></span>
+					<div class="title-repeat__img">
+
+						<img src="../images/camera.png" alt="видеонаблюдение">
+
+					</div><span class="line"></span>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!--_______________________________________________________________________________________________________________________-->
+
+		<!-- секция с информацией о видеонаблюдении за ремонтом -->
+		<section class="camera-control">
+			<!-- специальный ограничивающий контейнер о видеонаблюдении за ремонтом -->
+			<div class="camera-control__conteiner">
+				<!-- изображение секции -->
+				<div class="camera-control__img "></div>
+				<!-- декоративная линия -->
+				<span class="line-camera"></span>
+				<!-- параграф -->
+				<p class="camera-control __paragraf">At each facility, a camera is installed that broadcasts the progress of
+					work on the clock. At any time, you can go to our website and monitor the progress of work in your
+					apartment. You can watch the live broadcast from one of our facilities!
+					Leave a request below and you will receive a link to the broadcast.
+				</p>
+				<!-- форма заявки секции с информацией о видеонаблюдении за ремонтом-->
+				<form class="camera-control__form" action="#">
+					<!--поле для имени секци с информацией о видеонаблюдении за ремонтом-->
+					<div class="name-form">
+						<label class="name-form__label" for="camera-control__username">Name</label><br>
+						<input class="name-form__input" type="text" id="camera-control__username"
+							name="camera-control__username" placeholder="What is your name:">
+					</div>
+					<!--поле для телефона секции с информацией о видеонаблюдении за ремонтом-->
+					<div class="phone-form">
+						<label class="phone-form__label" for="phone-form__tel">Phone</label><br>
+						<input class="phone-form__input" type="password" id="phone-form__tel" name="phone-form__tel"
+							placeholder="Your phone number:">
+					</div>
+					<!--кнопка формы секции с информацией о видеонаблюдении за ремонтом-->
+					<button class="button-form" type="submit" value="Submit">Submit</button>
+				</form>
+				<!--чекбокс секции с информацией о видеонаблюдении за ремонтом-->
+				<div class="checkbox ">
+					<input class="camera-control __checkbox-check" id="check" type="checkbox" name="agree">
+					<label for="check" class="camera-control __checkbox"></label>
+					<p>I agree to the processing of personal data</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!--_______________________________________________________________________________________________________________________-->
+
+		<!--секция с типами ремонтов -->
+		<section class="change-types">
+			<!--повторяющийся заголовок -->
+			<div class="title-repeat">
+				<h3 class="title-repeat__text __black">TYPES OF REPAIR</h3>
+				<!--декоративный блок с декоративными линиями-->
+				<div class="title-repeat__top">
+					<span class="line"></span>
+					<div class="title-repeat__img">
+						<img src="../images/tools.svg" alt="видеонаблюдение">
+					</div><span class="line"></span>
+				</div>
+			</div>
+			<!--ограничивающий контейнер-->
+			<div class="container constract__container">
+				<!--блок с карточкой описания типа ремонта-->
+				<div class="constract__block redecorating">
+					<!--изображение блока-->
+					<img class="constract__img img-redecorating" src="../images/Redecorating.jpg" alt="">
+					<!--внешний контейнер для текста-->
+					<div class="constract__text-bottom-container">
+						<div class="constract__text-container">
+							<div class="constract__text">
+								<h4 class="constract__head">Redecorating</h4>
+								<ul>
+									<li>Dismantling of old coatings</li>
+									<li>Wallpapering</li>
+									<li>Painting walls and ceilings</li>
+									<li>Laying flooring</li>
+									<li>Replacing plumbing</li>
+									<li>Replacing sockets and switches</li>
+									<li>Replacing doors</li>
+								</ul>
+							</div>
+						</div>
+						<button class="button constract__button">from 900 rub / m2</button>
+					</div>
+				</div>
+				<!--блок с карточкой описания типа ремонта-->
+				<div class="constract__block overhaul">
+					<!--изображение блока-->
+					<img class="constract__img img-overhaul" src="../images/Overhaul.jpg" alt="">
+					<!--внешний контейнер для текста-->
+					<div class="constract__text-bottom-container">
+						<div class="constract__text-container">
+							<div class="constract__text">
+								<h4 class="constract__head">Overhaul</h4>
+								<ul>
+									<li>Dismantling of old coatings</li>
+									<li>Wallpapering</li>
+									<li>Painting walls and ceilings</li>
+									<li>Laying flooring</li>
+									<li>Replacing plumbing</li>
+									<li>Replacing sockets and switches</li>
+									<li>Replacing doors</li>
+								</ul>
+							</div>
+						</div>
+						<button class="button constract__button">from 1800 rub / m2</button>
+					</div>
+				</div>
+				<!--блок с карточкой описания типа ремонта-->
+				<div class="constract__block designer_repair">
+					<!--изображение блока-->
+					<img class="constract__img img-designer_repair" src="../images/Designer Repair.jpg" alt="">
+					<!--внешний контейнер для текста-->
+					<div class="constract__text-bottom-container">
+						<div class="constract__text-container">
+							<div class="constract__text">
+								<h4 class="constract__head">Designer Repair</h4>
+								<ul>
+									<li>Dismantling of old coatings</li>
+									<li>Wallpapering</li>
+									<li>Painting walls and ceilings</li>
+									<li>Laying flooring</li>
+									<li>Replacing plumbing</li>
+									<li>Replacing sockets and switches</li>
+									<li>Replacing doors</li>
+								</ul>
+							</div>
+						</div>
+						<!--кнопка выбора понравившегося варианта-->
+						<button class="button constract__button">from 4000 rub / m2</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--_______________________________________________________________________________________________________________________-->
+
+
+		<section class="registration">
+			<div class="container registration__container"></div>
+		</section>
+
+		<!--_______________________________________________________________________________________________________________________-->
+
+		<!--секция с преимуществами и заявкой -->
+		<section class="call-the-measurer">
+			<!--фоновое изображение секции с преимуществами и заявкой-->
+			<div class="background-image">
+				<img class="call-the-measurer__img" src="../images/building.png" alt="">
+			</div>
+			<!-- специальный ограничивающий контейнер секции с преимуществами и заявкой -->
+			<div class="call-the-measurer__form-container">
+				<!--список секции-->
+				<div class="call-the-measurer__list">
+					<ol class="call-the-mesurer__ol">
+						<li class="call-the-measurer__li">Our specialist will arrive for measurements per day
+							contact, or appoint a date convenient for you</li>
+						<li class="call-the-measurer__li">Free metering</li>
+						<li class="call-the-measurer__li">Free consultation</li>
+						<li class="call-the-measurer__li">Get a cost estimate and
+							the timing of your future repairs</li>
+					</ol>
+				</div>
+				<!--форма заявки секции с преимуществами и заявкой-->
+				<div class="call-the-measurer__form-div">
+					<form class="call-the-measurer__form" action="#">
+						<div class="call-the-measurer__name-form">
+							<!--заголовок формы секции с преимуществами и заявкой-->
+							<h3 class="call-the-measurer__h3">Leave a request for free
+								departure of the measurer</h3>
+							<!--поле для имени секции с информацией о видеонаблюдении за ремонтом-->
+							<div class="call-the-measurer__name">
+								<label class="call-the-measurer__label" for="camera-control__username">Name</label><br>
+								<input class="call-the-measurer__input" type="text" id="camera-control__username"
+									name="camera-control__username" placeholder="What is your name:">
+							</div>
+							<!--поле для телефона секции с информацией о видеонаблюдении за ремонтом-->
+							<div class="call-the-measurer__phone">
+								<label class=" call-the-measurer__label" for="call-the-measurer__tel">Phone</label><br>
+								<input class="call-the-measurer__input" type="tel" id="call-the-measurer__tel"
+									name="phone-form__tel" placeholder="Your phone number:">
+							</div>
+							<!--поле для email секции с информацией о видеонаблюдении за ремонтом-->
+							<div class="call-the-measurer__email">
+								<label class=" call-the-measurer__label" for="call-the-measurer__email">E-mail</label><br>
+								<input class="call-the-measurer__input" type="email" id="call-the-measurer__tel"
+									name="phone-form__tel" placeholder="Your email">
+							</div>
+							<!--xtr,jrc секции с информацией о видеонаблюдении за ремонтом-->
+							<div class="call-the-measurer__checkbox ">
+								<input class="camera-control __checkbox-check" id="call-the-measurer" type="checkbox"
+									name="agree">
+								<label for="call-the-measurer" class="camera-control __checkbox"></label>
+								<p>I agree to the processing of personal data</p>
+							</div>
+						</div>
+						<!--кнопка секции с информацией о видеонаблюдении за ремонтом-->
+						<button class="button-form call-the-measurer__button-form">call the measurer</button>
+					</form>
+					<!--декоративное изображение секции с информацией о видеонаблюдении за ремонтом-->
+					<div class="call-the-measurer__circle-and-text">
+						<div class="round-1 call-the-measurer__round-1">
+							<img class="call-the-measurer__round-1-img" src=" ../images/pig.png" alt="">
+						</div>
+						<p class="call-the-measurer__text">Help save 10 - 20% of the
+							cost of materials</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--_______________________________________________________________________________________________________________________-->
+
+		<!--секция с отзывами наших клиентов -->
+		<section class="our-clients">
+			<!--повторяющийся заголовок -->
+			<div class=" title-repeat">
+				<h3 class="title-repeat__text __black">our clients</h3>
+				<div class="title-repeat__top">
+					<span class="line"></span>
+					<div class="title-repeat__img">
+
+						<img src="../images/hands.png" alt=" видеонаблюдение">
+
+					</div><span class="line"></span>
+				</div>
+			</div>
+			<!--параграф секции с отзывами наших клиентов -->
+			<p class="our-clients__paragraf __paragraf">80% of our customers recommend us to their
+				friends and family.</p>
+			<!--ограничивающий контейнер -->
+			<div class="container constract__container constract__container-our-clients ">
+				<div class="constract__block designer_repair">
+					<div class="constract__text-bottom-container">
+						<!--блок изображения в круге-->
+						<div class="person">
+							<img class="round-1" src="../images/fedosova_marina_konstantinovna.png" alt="">
+							<div class="person__name">
+								<h3>Fedosova Maria Konstantinovna</h3>
+							</div>
+						</div>
+						<!--блок с отзывом-->
+						<div class="constract__text-container constract__text-our-clients">
+							<div class="our-clients__text">
+								<p class="our-clients__text-p">I want to thank the guys for their work. We put
+									your shower part
+									in
+									repair. I am very grateful that I referred to the repair as to my own. Great
+									thanks I express
+									the project to georgia for its professionalism and approach.</p>
+								<p class="our-clients__text-p">The repair process was turned out in terms, faster
+									than
+									anticipated. Team mobile and professional. Works performed qualitatively
+									without comments.
+									quality satisfied. Prices democratic. I recommend these masters. </p>
+							</div>
+						</div>
+						<!--блок с информацией о площади помещения и сроках-->
+						<div class="area-days">
+							<div class="area">
+								<img src="../images/area.png" alt="">
+								<p>40 m2</p>
+							</div>
+							<div class="vl"></div>
+							<div class="list-days">
+								<img src="../images/list-days.svg" alt="">
+								<p>48 DAYS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="constract__block designer_repair">
+					<div class="constract__text-bottom-container">
+						<!--блок изображения в круге-->
+						<div class="person">
+							<img class="round-1" src="../images/afanasyev_sergey_alexsandrovich.png" alt="">
+							<div class="person__name">
+								<h3>Afanasyev Sergey Alexandrovich</h3>
+							</div>
+						</div>
+						<!--блок с отзывом-->
+						<div class="constract__text-container constract__text-our-clients">
+							<div class="our-clients__text">
+								<p class="our-clients__text-p">I want to thank the guys for their work. We put
+									your shower part
+									in
+									repair. I am very grateful that I referred to the repair as to my own. Great
+									thanks I express
+									the project to georgia for its professionalism and approach.</p>
+								<p class="our-clients__text-p">The repair process was turned out in terms, faster
+									than
+									anticipated. Team mobile and professional. Works performed qualitatively
+									without comments.
+									quality satisfied. Prices democratic. I recommend these masters. </p>
+							</div>
+						</div>
+						<!--блок с информацией о площади помещения и сроках-->
+						<div class="area-days">
+							<div class="area">
+								<img src="../images/area.png" alt="">
+								<p>90 m2</p>
+							</div>
+							<div class="vl"></div>
+							<div class="list-days">
+								<img src="../images/list-days.svg" alt="">
+								<p>128 DAYS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="constract__block designer_repair">
+					<div class="constract__text-bottom-container">
+						<!--блок изображения в круге-->
+						<div class="person">
+							<img class="round-1" src="../images/kiriev_egor_leonidovich.png" alt="">
+							<div class="person__name">
+								<h3>Kiriev Egor Leonidovich</h3>
+							</div>
+						</div>
+						<!--блок с отзывом-->
+						<div class="constract__text-container constract__text-our-clients">
+							<div class="our-clients__text">
+								<p class="our-clients__text-p">I want to thank the guys for their work. We put
+									your shower part
+									in
+									repair. I am very grateful that I referred to the repair as to my own. Great
+									thanks I express
+									the project to georgia for its professionalism and approach.</p>
+								<p class="our-clients__text-p">The repair process was turned out in terms, faster
+									than
+									anticipated. Team mobile and professional. Works performed qualitatively
+									without comments.
+									quality satisfied. Prices democratic. I recommend these masters. </p>
+							</div>
+						</div>
+						<!--блок с информацией о площади помещения и сроках-->
+						<div class="area-days">
+							<div class="area">
+								<img src="../images/area.png" alt="">
+								<p>56 m2</p>
+							</div>
+							<div class="vl"></div>
+							<div class="list-days">
+								<img src="../images/list-days.svg" alt="">
+								<p>86 DAYS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--_______________________________________________________________________________________________________________________-->
+
+		<!--секция с формой для дополнительных вопросов-->
+		<section class="have-any-questions">
+			<!--фоновое изображение секции с формой для дополнительных вопросов-->
+			<div class="have-any-questions__background-image">
+				<img class="have-any-questions__img" src="../images/have-any-questions-background.png" alt="">
+				<img class="have-any-questions__img-right" src="../images/have-any-questions-background-right.png" alt="">
+			</div>
+			<!-- специальный ограничивающий контейнер секции с формой для дополнительных вопросов-->
+			<div class="have-any-questions__container">
+				<!--заголовок-->
+				<div class="title-repeat">
+					<h3 class="title-repeat__text __white have-any-questions__title">have any questions?</h3>
+				</div>
+				<!--форма секции с формой для дополнительных вопросов-->
+				<div class="have-any-questions__form">
+					<form class="have-any-questions__form-name-phone" action="#">
+						<!--поле для имени секции с формой для дополнительных вопросов-->
+						<div class="have-any-questions__name-form ">
+							<label class="have-any-questions__label" for="username">Name</label><br>
+							<input class="have-any-questions__input" type=" text" id="username" name="username"
+								placeholder="What is your name:">
+						</div>
+						<!--поле для телефона секции с формой для дополнительных вопросов-->
+						<div class="have-any-questions__phone-form">
+							<label class="have-any-questions__label" for="tel">Phone</label><br>
+							<input class="have-any-questions__input" type="tel" id="tel" name="tel"
+								placeholder="Your phone number:">
+						</div>
+					</form>
+					<form class="have-any-questions__question" action="">
+						<!--поле для вопроса секции с формой для дополнительных вопросов-->
+						<div class="have-any-questions__question-form">
+							<label class="have-any-questions__label label-question" for="text">Question</label><br>
+							<input class="have-any-questions__input input-question" type=" text" id="text" name="text"
+								placeholder="I want to know:">
+						</div>
+					</form>
+					<!--чекбокс секции с формой для дополнительных вопросов-->
+					<div class="checkbox have-any-questions__checkbox">
+						<input class="camera-control __checkbox-check" id="have" type="checkbox" name="agree">
+						<label for="have" class="camera-control __checkbox"></label>
+						<p class="white-text">I agree to the processing of personal data</p>
+					</div>
+					<!--кнопка секции с формой для дополнительных вопросов-->
+					<button class="button-form have-any-questions__button-form" type="submit" value="Submit">Submit</button>
+				</div>
+
+			</div>
+		</section>
+
+		<!--_______________________________________________________________________________________________________________________-->
+
+		<!--секция с контактными данными-->
+		<section class="hero hero-bottom">
+			<div class="container hero-bottom-container">
+				<!--адрес-->
+				<div class="hero-bottom__title">
+					<h3 class=" hero-bottom__text">Rostov-on-Don, Nansen St., 239 Shopping Center
+						Decorum Tel +7 (928) 768 32 29</h3>
+					<!-- блок со ссылками на соцсети -->
+					<div class="title-repeat__top">
+						<div class="hero-bottom__img">
+							<div class="round-top">
+								<a href="#"><img class="round-mail" src="../images/mail.png" alt=""></a>
+							</div>
+							<div class="round-top">
+								<a href="#"><img class="round-insta" src="../images/insta.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- блок со встроенной картой -->
+				<div class="map-box">
+					<div style="position:relative;overflow:hidden;"><a
+							href="https://yandex.ru/maps/org/dekorum/1113729703/?utm_medium=mapframe&utm_source=maps"
+							style="color:#eee;font-size:12px;position:absolute;top:0px;">Декорум</a><a
+							href="https://yandex.ru/maps/39/rostov-na-donu/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
+							style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в
+							Ростове‑на‑Дону</a><a
+							href="https://yandex.ru/maps/39/rostov-na-donu/category/sale_and_lease_of_commercial_real_estate/184107521/?utm_medium=mapframe&utm_source=maps"
+							style="color:#eee;font-size:12px;position:absolute;top:28px;">Продажа и аренда коммерческой
+							недвижимости в Ростове‑на‑Дону</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUjb2QPCC"
+							width="925" height="462" frameborder="1" allowfullscreen="true"
+							style="position:relative;"></iframe></div>
+				</div>
+			</div>
+			<div class="hero-bottom-overlay"></div>
+		</section>
+	</main>
+
+	<!--_______________________________________________________________________________________________________________________-->
+
+	<!-- подвал, аналогичен шапке -->
+	<footer class="header footer">
+		<div class="container header-content footer-content">
+			<div class="logo">IC "Repair Design Project"</div>
+			<nav>
+				<ul class="header-navigation">
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">HOME</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">PROJECTS</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">MEASUREMENT</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">TEAM</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">REVIEWS</a>
+					</li>
+					<li class="header-navigation__item">
+						<a class="header-navigation__link" href="#">CONTACTS</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="tel" href="tel">+7 (928) 768-32-39</a>
+			<button class="button">Request a call</button>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
