@@ -465,6 +465,9 @@ height: 13px;
 /* стили декоративных изображений*/
 .title-repeat__img {
 	margin: 0 5px;
+	background: url("../images/camera.png");
+	min-width: 33px;
+	height: 28px;
 }
 /* стили декоративных линий*/
 .line {
@@ -602,11 +605,31 @@ color: #363636;
 	justify-content: space-between;
 	padding-bottom: 31px;
 }
-
+.change-types__img{
+	margin: 0 5px;
+	background: url("../images/tools.svg");
+	min-width: 33px;
+	height: 28px;
+	background-repeat: no-repeat;
+}
 /*стили тизображения блока карточек с типами ремонтов */
-.constract__img {
+.img-redecorating{
 	background-size: cover;
-	max-width: 392px;
+	width: 392px;
+	height: 421px;
+	background: url("../images/Redecorating.jpg");
+}
+.img-overhaul{
+	background-size: cover;
+	width: 392px;
+	height: 421px;
+	background: url("../images/Overhaul.jpg");
+}
+.img-designer_repair{
+	background-size: cover;
+	width: 392px;
+	height: 421px;
+	background: url("../images/Designer Repair.jpg");
 }
 /*стили блока карточек с типами ремонтов */
 .constract__block {
@@ -669,7 +692,10 @@ ul li {
 }
 /*стили фотонового изображения секции call-the-measurer */
 .background-image{
-margin-bottom: 151px;
+	margin-bottom: 151px;
+	background: url("../images/building.png");
+	width: 750px;
+	height: 600px;
 }
 /*стили ограничивающего контейнера формы ввода секции call-the-measurer */
 .call-the-measurer__form-container{
@@ -805,6 +831,9 @@ margin: auto 49px 27px 244px;
 /* стили закругления блока с декоративным изображением секции call-the-measurer */
 .call-the-measurer__round-1-img{
 	transform: translate(45%, 50%);
+	background: url("../images/pig.png");
+	width: 40px;
+	height: 33px;
 }
 /* стили блока с текстом и декоративным изображением секции call-the-measurer */
 .call-the-measurer__circle-and-text{
@@ -827,11 +856,19 @@ margin: auto 49px 27px 244px;
 /* ------------------------------------------------------------------------------------------------ */
 /* стили секции с отзывами */
 .our-clients{
-	margin-bottom: -100px;
+	margin-bottom: -150px;
+}
+.our-clients__img{
+	margin: 0 5px;
+	background: url("../images/hands.png");
+	background-size: cover;
+	min-width: 33px;
+	height: 28px;
+	background-repeat: no-repeat;
 }
 /* стилиограничевающего контейнера секции с отзывами */
 .constract__container-our-clients {
-	padding-bottom: 125px;
+	/* padding-bottom: 125px; */
 }
 /* стили заглавного параграфа со статистическими данными блока с отзывами */
 .our-clients__paragraf {
@@ -852,6 +889,15 @@ margin: auto 49px 27px 244px;
 	height: 76px; 
 	border-radius: 50%; /* Превращаем в круг */
 	background-size: auto 300px; /* Высота фотографии равна высоте элемента */
+}
+.fedosova-img{
+	background: url("../images/fedosova_marina_konstantinovna.png");
+}
+.afanasyev-img{
+	background: url("../images/afanasyev_sergey_alexsandrovich.png");
+}
+.kiriev-img{
+	background: url("../images/kiriev_egor_leonidovich.png");
 }
 /* стили имени клиента блока с отзывами */
 .person__name {
@@ -911,9 +957,11 @@ margin: auto 49px 27px 244px;
 	align-items: center;
 }
 /* стили изображения для блока с информацией о площади*/
-.area img{
-	max-width: 32px;
-	max-height: 31px;
+.img-area-1{
+	background: url("../images/area.png" );
+	background-size: cover;
+	width: 32px;
+	height: 31px;
 	margin-right: 10px;
 }
 /* отдел о сроках */
@@ -932,9 +980,11 @@ margin: auto 49px 27px 244px;
 	align-items: center;
 }
 /* стили изображения для блока с информацией о сроках */
-.list-days img{
-	max-width: 32px;
-	max-height: 31px;
+.img-list-days-1{
+	background: url("../images/list-days.svg" );
+	background-size: cover;
+	width: 32px;
+	height: 31px;
 	margin-right: 10px;
 }
 
@@ -952,20 +1002,31 @@ margin: auto 49px 27px 244px;
 /* стили правого полупрозрачного изображения из секции для дополнительных вопросов */
 .have-any-questions__background-image{
 	display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
 	position: absolute;
-	transform: translate(0%, 80%);
+	transform: translate(0%, 0%);
+	width: 100vw;
+	height: 10vh;
 }
 /* стили левого полупрозрачного изображения из секции для дополнительных вопросов */
 .have-any-questions__img{
-	margin-top: -150px;
+	margin-top: 100px;
 	opacity: 0.06;
+	background: url("../images/have-any-questions-background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 700px;
+	height: 400px;
 }
 /* стили правого полупрозрачного изображения из секции для дополнительных вопросов */
 .have-any-questions__img-right{
-	margin-top: -200px;
 	margin-left: 4vw;
 	opacity: 0.06;
+	background: url("../images/have-any-questions-background-right.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 700px;
+	height: 500px;
 }
 /* стили заголовка из секции для дополнительных вопросов */
 .have-any-questions__title{
@@ -1062,12 +1123,22 @@ margin: auto 49px 27px 244px;
 	margin-left: 15px;
 }
 /* изображение почты */
-.round-mail{
-	transform: translate(0%, 50%);
+.round-mail {
+	transform: translate(45%, 60%);
+	background: url("../images/mail.png");
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 13px;
+	background-size: cover;
 }
 /* изображение инстаграма */
 .round-insta{
-	transform: translate(0%, 40%);
+	transform: translate(45%, 40%);
+	background: url("../images/insta.png");
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	background-size: cover;
 }
 /* настройка блока ссылок на социальные сети */
 .hero-bottom__img{
