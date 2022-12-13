@@ -101,14 +101,18 @@ h6 {
 	color: white;
 }
 
-
-
 /* настройки многократно используемого container */
 .container {
 	max-width: 1250px;
 	margin: 0 auto;
 }
-
+@media screen and (max-width: 376px) {
+	.container {
+		max-width: 375px;
+		padding-left: 19px;
+		padding-right: 19px;
+	}
+}
 /* настройки многократно используемого button */
 .button {
 	background: #e3b873;
@@ -121,14 +125,16 @@ h6 {
 	text-transform: uppercase;
 	font-style: italic;
 }
+@media screen and (max-width: 376px) {
+	.button-header {
+		display: none;
+	}
+}
 
 /* настройки logo */
 .logo {
 	color: #e3b873;
 }
-
-
-
 
 /*стили для header_______________________________________________________________ */
 .header {
@@ -147,6 +153,11 @@ h6 {
 	list-style: none;
 	display: flex;
 }
+@media screen and (max-width: 376px) {
+	.header-navigation {
+		display: none;
+	}
+}
 .header-navigation__item {
 	margin-right: 47px;
 	list-style: none;
@@ -161,6 +172,12 @@ h6 {
 	color: #e3b873;
 	text-decoration: underline;
 }
+@media screen and (max-width: 376px) {
+	.tel {
+		color: #ffffff;
+		text-decoration: none;
+	}
+}
 .hero {
 	background-image: url("../images/hero.jpg");
 	background-size: cover;
@@ -168,7 +185,14 @@ h6 {
 	padding-top: 194px;
 	position: relative;
 }
-
+@media screen and (max-width: 376px) {
+	.hero {
+		height: 477px;
+		background-size: no-repeat center url("../images/hero.jpg");
+		background-position: 60% 0%;
+		padding-top: 85px;
+	}
+}
 .hero-overlay {
 	content: "";
 	position: absolute;
@@ -183,34 +207,16 @@ h6 {
 	position: relative;
 	z-index: 1;
 }
-/* cстили блока со списком городов */
-.cities{
-display: inline-block;
-margin-left: 50%;
-min-width: 623px;
-position: absolute;
-transform: translate(0%, 100%);
-z-index: 10;
-}
-/* cстили блока со списком городов после наведения мышкой*/
-.cities a{
-	font-family: 'Yeseva One';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 19px;
-	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.3);
-	margin-right: 60px;
-}
-.cities a:hover{
-	color: #e3b873;
-	border-bottom: 1px solid;
-}
+
 .hero__text {
 	max-width: 514px;
 }
-
+@media screen and (max-width: 376px) {
+	.hero-text {
+		max-width: 339px;
+		margin: 0 auto;
+	}
+}
 .title {
 	font-family: "Yeseva One";
 	font-style: normal;
@@ -221,11 +227,44 @@ z-index: 10;
 	color: #ffffff;
 	margin-bottom: 23px;
 }
-
+@media screen and (max-width: 376px) {
+	.title {
+		font-family: "Yeseva One";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 23px;
+		line-height: 132.83%;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+}
 .text-color {
 	color: #e3b873;
 }
-
+/* cстили блока со списком городов */
+.cities a:hover {
+	color: #e3b873;
+	border-bottom: 1px solid;
+}
+.cities {
+	display: inline-block;
+	margin-left: 50%;
+	min-width: 623px;
+	position: absolute;
+	transform: translate(0%, 100%);
+	z-index: 10;
+}
+/* cстили блока со списком городов после наведения мышкой*/
+.cities a {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	margin-right: 60px;
+}
 .subtitle {
 	font-family: "Nunito Sans";
 	font-style: normal;
@@ -238,53 +277,139 @@ z-index: 10;
 	margin-bottom: 37px;
 }
 
+@media screen and (max-width: 376px) {
+	.subtitle {
+		font-family: "Nunito Sans";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 135.84%;
+		color: #ffffff;
+		height: 94px;
+		text-align: match-parent;
+	}
+}
 .button-transparent {
 	background: transparent;
 	border: 1px solid;
 	margin-left: 20px;
 }
+@media screen and (max-width: 376px) {
+	.hero__buttons {
+		display: flex;
+		flex-direction: column;
+	}
+	.button-hero {
+		width: 100%;
+	}
+	.button.button-h {
+		font-family: "Nunito Sans";
+		font-style: italic;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 15px;
+		text-align: center;
+	}
+	.button-transparent {
+		width: 100%;
+		margin-top: 26px;
+		margin-left: 0px;
+	}
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
 /* стили секции вариантов ремонта */
 .apartment {
 	background-color: #131313;
 	padding-bottom: 257px;
 	padding-top: 107px;
-	
+}
+@media screen and (max-width: 376px) {
+	.apartment {
+		padding-top: 36px;
+	}
 }
 /* стили ссылок для перелючения слайдов секции вариантов ремонта */
-#rostov-on-don:targer{
+#rostov_admiral:enabled {
+	position: static;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 3, 1fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 1em;
 	max-width: 1171px;
+	max-height: 482px;
 }
-#sochi:targer{
+#sochi:enabled {
+	position: static;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 3, 1fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 1em;
 	max-width: 1171px;
+	max-height: 482px;
 }
-#rostov_admiral:targer{
+#patriotic:enabled {
+	position: static;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 3, 1fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 1em;
 	max-width: 1171px;
+	max-height: 482px;
 }
 /* стили контейнера слайдера секции вариантов ремонта */
 .apartment-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 10px;
+	grid-template-rows: 4, 1fr;
+	grid-template-areas:
+		"a d"
+		"b d"
+		"c d"
+		"i d";
+	/* grid-column-gap: 50px; */
 	grid-row-gap: 1em;
 	max-width: 1171px;
+	min-height: 482px;
+}
+@media screen and (max-width: 376px) {
+	.apartment-container {
+		max-width: 339px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 5, 1fr;
+		grid-template-areas:
+			"a "
+			"b"
+			"d"
+			"i"
+			"c";
+	}
+	.cities {
+		display: none;
+	}
 }
 /* стили текстового блока с описанием параметров ремонта секции вариантов ремонта */
 .apartment__text {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 	max-width: 442px;
+	max-height: 390px;
+	grid-column: 1;
+	grid-row: 1 /2;
+}
+.navigation {
+	display: flex;
+	align-self: center;
+	grid-column: 1;
+	grid-row: 3;
+	max-width: 442px;
+	height: 34px;
+	position: relative;
+	grid-area: i;
 }
 /* стили заголовков описания секции вариантов ремонта */
 .apartment__title {
@@ -296,30 +421,71 @@ z-index: 10;
 	letter-spacing: -0.07em;
 	text-transform: uppercase;
 	color: #e3b873;
+	max-width: 250px;
+	grid-area: a;
+}
+@media screen and (max-width: 376px) {
+	.apartment__title {
+		font-family: "Yeseva One";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 138.6%;
+		margin: 0 auto;
+		text-align: center;
+		letter-spacing: -0.07em;
+		text-transform: uppercase;
+		color: #e3b873;
+	}
 }
 /* стили параграфа с общим описанием секции вариантов ремонта */
 .apartment__paragraf {
-	margin-top: 34px;
-	margin-bottom: 57px;
+	margin-top: 30px;
+	margin-bottom: 50px;
 	font-family: "Nunito Sans";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 27px;
 	color: #ffffff;
-	font-family: 'Nunito Sans';
+	font-family: "Nunito Sans";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 27px;
-	color: #FFFFFF;
+	color: #ffffff;
+	max-width: 442px;
+	grid-area: b;
+}
+@media screen and (max-width: 376px) {
+	.apartment__paragraf {
+		margin-bottom: 0;
+		padding-bottom: 50px;
+		font-family: "Nunito Sans";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 158.48%;
+		text-align: center;
+
+		color: #ffffff;
+	}
 }
 /* стили описания параметров ремонта секции вариантов ремонта */
 .apartment-description {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-column-gap: 67px;
 	grid-row-gap: 35px;
+	margin-bottom: 0px;
+	max-width: 442px;
+	grid-area: c;
+}
+@media screen and (max-width: 376px) {
+	.apartment-description {
+		grid-column-gap: 31px;
+	}
 }
 /* стили заголовков секции вариантов ремонта */
 .apartment-description__title {
@@ -332,8 +498,14 @@ z-index: 10;
 	margin-bottom: 9px;
 	color: #e3b873;
 }
+@media screen and (max-width: 376px) {
+	.apartment-description__title {
+		font-size: 14px;
+		line-height: 138.6%;
+	}
+}
 /* стили параграфов секции вариантов ремонта */
-.appartment-description__paragraf {
+.apartment-description__paragraf {
 	font-family: "Nunito Sans";
 	font-style: normal;
 	font-weight: 400;
@@ -342,99 +514,176 @@ z-index: 10;
 	color: #ffffff;
 	max-width: 100px;
 }
+@media screen and (max-width: 376px) {
+	.apartment-description__paragraf {
+		font-size: 11px;
+		line-height: 135.84%;
+	}
+}
 /* стили изображений слайдера */
 .apartment__img {
-	background-size: cover;
 	height: 482px;
-	max-width: 679px;
+	width: 679px;
+	grid-column: 2;
+	grid-row: 1 /4;
+	border: 1px solid rgb(255, 217, 0);
+	grid-area: d;
+}
+@media screen and (max-width: 376px) {
+	.apartment__img {
+		padding-top: 241px;
+		margin-top: 34px;
+		width: 340px;
+	}
 }
 /* изображение ростов адмирал */
 .img-rostov_admiral {
+	background-size: cover;
 	background-image: url("../images/apartment_rostov-on-don.png");
+	width: 100%;
+	height: 100%;
 }
 /* изображение сочи */
 .img-sochi {
+	background-size: cover;
 	background-image: url("../images/apartment_sochi.png");
+	width: 100%;
+	height: 100%;
+}
+.img-rostov_2 {
+	background-size: cover;
+	background-image: url("../images/rostov.jpg");
+	width: 100%;
+	height: 100%;
 }
 /* ------------------------------------------------------------------------------------------------ */
-.swiper-wrapper {
-	margin: 90px auto;
-}
-
-.swiper-slider {
-}
-.swiper-slider-active{
-}
-.swiper-pagination {
-
-}
-.swiper-navigation__navigation-block{
-	display: flex;
-	align-self: center;
-	position: absolute;
-	top: 550px;
-	right: 65vw; 
-	width: 206px;
+/* блок слайдера*/
+.apartment-block {
+	position: relative;
+	margin-top: 100px;
+	border-radius: 20px;
 	height: auto;
-}
-.swiper-pagination-bullets .swiper-pagination-bullet {
-	background-color: #e3b873;
-}
-.swiper-button-next::after{
-	right: 65vw;
-	padding: 50px; 
-	width: auto;
-}
-.swiper-button-prev::after{
-	left: 0vw; 
-	padding: 50px; 
-	width: auto;
+	margin-bottom: 91px;
 }
 
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after {
-content: 'next';
+/* слайдер */
+.apartment-block__slider {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
 }
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after {
- content: 'next';
+
+.apartment-nav:checked + .apartment__slide {
+	position: static;
+	opacity: 100;
 }
-.swiper-button-prev,
-.swiper-button-next {
-position: absolute;
-/* width: calc(var(--swiper-navigation-size) / 13 * 42);  */
-/* height: var(--swiper-navigation-size); */
- /* margin-top: calc(-1 * var(--swiper-navigation-size) / 2); */
-z-index: 10;
-cursor: pointer;
-/* margin: 10px; */
-/* display: flex;  */
-align-items: center;
-justify-content: center;
-/* opacity: 0; */
-background: url("../images/prev.png") no-repeat center;
-width: 41px;
-height: 13px;
-background-size: 41px 13px;
-top: 250px;
-/* overflow: hidden; */
+
+.apartment__slide {
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: opacity 0.6s ease-out;
+	transition: opacity 0.6s ease-out;
 }
-/* стили стрелки вправо слайдера */
-.swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-prev:after {
-/* background: url("../images/prev.png") no-repeat center; */
-width: 42px;
-height: 13px;
-opacity: 0;
+
+.apartment__slide img {
+	display: block;
+	height: auto;
+	max-width: 100%;
 }
-/* стили стрелки вправо слайдера */
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-next:after {
-background: url("../images/next.png") no-repeat center;
-width: 42px;
-height: 13px;
-/* opacity: 0; */
+@media screen and (max-width: 376px) {
+	.apartment__slide img {
+		position: relative;
+	}
 }
+.prev-next {
+	width: 42px;
+	height: 25px;
+	font-size: 0px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 11;
+}
+@media screen and (max-width: 376px) {
+	.prev-next {
+		cursor: pointer;
+		font-size: 0px;
+		height: 36px;
+		line-height: 35px;
+		text-align: center;
+		width: 36px;
+		z-index: 10;
+	}
+}
+.prev-next.prev {
+	background: url("../images/prev.png") no-repeat center;
+	z-index: 12;
+}
+@media screen and (max-width: 376px) {
+	.prev-next.prev {
+		left: 14px;
+		position: absolute;
+		top: -130px;
+		background: url("../images/left375.png") no-repeat center;
+	}
+}
+.prev-next.next {
+	left: 39%;
+	background: url("../images/next.png") no-repeat center;
+	z-index: 12;
+}
+@media screen and (max-width: 376px) {
+	.prev-next.next {
+		left: 242px;
+		position: absolute;
+		top: -130px;
+		background: url("../images/right375.png") no-repeat center;
+	}
+}
+#slide-1:checked ~ .sl-1,
+#slide-2:checked ~ .sl-2,
+#slide-3:checked ~ .sl-3 {
+	display: block;
+}
+
+.bullets {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 5%;
+	left: 16%;
+	right: 0;
+	text-align: left;
+	z-index: 10;
+	max-width: 80px;
+}
+@media screen and (max-width: 376px) {
+	.bullets {
+		display: none;
+	}
+}
+.bullets li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.slide-bullet {
+	color: #393939;
+	cursor: pointer;
+	display: block;
+	font-size: 35px;
+}
+
+.slide-bullet:hover {
+	color: #fff;
+}
+
+#slide-1:checked ~ .sl-1 ~ .bullets li:nth-child(1) .slide-bullet,
+#slide-2:checked ~ .sl-2 ~ .bullets li:nth-child(2) .slide-bullet,
+#slide-3:checked ~ .sl-3 ~ .bullets li:nth-child(3) .slide-bullet {
+	color: #e3b873;
+}
+
 /* ------------------------------------------------------------------------------------------------ */
 /* стили повторяющегося блока с заголовком и изображением*/
 .title-repeat {
@@ -461,7 +710,11 @@ height: 13px;
 	text-align: center;
 	margin-bottom: 13px;
 }
-
+@media screen and (max-width: 376px) {
+	.title-repeat__text {
+		font-size: 22px;
+	}
+}
 /* стили декоративных изображений*/
 .title-repeat__img {
 	margin: 0 5px;
@@ -487,12 +740,28 @@ height: 13px;
 	display: flex;
 	flex-direction: column;
 }
+@media screen and (max-width: 376px) {
+	.camera-control__conteiner {
+		background-color: #131313;
+		position: relative;
+		padding-bottom: 43px;
+		margin-bottom: 83px;
+	}
+}
 /* стили изображения секции online control */
 .camera-control__img {
 	max-width: 817px;
 	height: 434px;
 	margin-top: -240px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/camera-control.png");
+}
+@media screen and (max-width: 376px) {
+	.camera-control__img {
+		max-width: 340px;
+		height: 206px;
+		background-size: cover;
+		margin-left: 11px;
+	}
 }
 /* стили декоративного элемента секции online control */
 .line-camera {
@@ -515,32 +784,77 @@ height: 13px;
 	margin: 0 auto 92px;
 	color: #363636;
 }
+@media screen and (max-width: 376px) {
+	.__paragraf {
+		font-size: 11px;
+		line-height: 169.8%;
+		text-align: center;
+		color: #ffffff;
+		max-width: 340px;
+		margin-bottom: 65px;
+	}
+}
 /* стили фонрмы ввода секции online control */
 .camera-control__form {
 	display: flex;
 	margin-bottom: 33px;
 	justify-content: space-around;
 }
+@media screen and (max-width: 376px) {
+	.camera-control__form {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+}
 /* стили полей ввода секции online control */
-.phone-form__input, .name-form__input{
+.phone-form__input,
+.name-form__input {
 	padding-top: 7px;
 	padding-bottom: 8px;
 	margin-right: 58px;
 	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 	max-width: 231px;
 }
+@media screen and (max-width: 376px) {
+	.phone-form__input,
+	.name-form__input {
+		background-color: #131313;
+		border-bottom: 1px solid white;
+		width: 340px;
+		margin-right: 0px;
+		margin-bottom: 63px;
+	}
+}
 /* стили названий полей ввода секции online control */
-.phone-form__label, .name-form__label{
+.phone-form__label,
+.name-form__label {
 	color: rgba(54, 54, 54, 0.5);
 }
+@media screen and (max-width: 376px) {
+	.phone-form__label,
+	.name-form__label {
+		font-size: 13px;
+		line-height: 21px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
 /* стили placeholder полей ввода секции online control */
-.phone-form__input::placeholder, .name-form__input::placeholder{
-font-family: 'Nunito Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 23px;
-color: #363636;
+.phone-form__input::placeholder,
+.name-form__input::placeholder {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 23px;
+	color: #363636;
+}
+@media screen and (max-width: 376px) {
+	.phone-form__input::placeholder,
+	.name-form__input::placeholder {
+		font-size: 14px;
+		line-height: 21px;
+		color: white;
+	}
 }
 /* общие стили кнопки формы */
 .button-form {
@@ -558,6 +872,26 @@ color: #363636;
 	box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
 	border-radius: 2px;
 }
+@media screen and (max-width: 376px) {
+	.button-form {
+		flex-direction: column;
+		position: absolute;
+		top: 85%;
+		left: 5%;
+		margin: 0px auto;
+		margin-top: 45px;
+		width: 340px;
+		height: 51px;
+		font-family: "Nunito Sans";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 27px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+}
 /* стилизация чекбокса */
 .checkbox {
 	margin: 0 auto;
@@ -567,6 +901,14 @@ color: #363636;
 	justify-content: c;
 	align-items: end;
 	max-width: 282px;
+}
+@media screen and (max-width: 376px) {
+	.checkbox {
+		position: absolute;
+		color: white;
+		left: 15%;
+		top: 85%;
+	}
 }
 .__checkbox-check {
 	position: absolute;
@@ -605,7 +947,24 @@ color: #363636;
 	justify-content: space-between;
 	padding-bottom: 31px;
 }
-.change-types__img{
+@media screen and (max-width: 376px) {
+	.constract__container {
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+		display: grid;
+		max-width: 339px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 5, 1fr;
+		grid-template-areas:
+			"a "
+			"b"
+			"d"
+			"i"
+			"c";
+	}
+}
+.change-types__img {
 	margin: 0 5px;
 	background: url("../images/tools.svg");
 	min-width: 33px;
@@ -613,23 +972,41 @@ color: #363636;
 	background-repeat: no-repeat;
 }
 /*стили тизображения блока карточек с типами ремонтов */
-.img-redecorating{
+.img-redecorating {
 	background-size: cover;
 	width: 392px;
 	height: 421px;
 	background: url("../images/Redecorating.jpg");
 }
-.img-overhaul{
+@media screen and (max-width: 376px) {
+	.img-redecorating {
+		width: 340px;
+		height: 365px;
+	}
+}
+.img-overhaul {
 	background-size: cover;
 	width: 392px;
 	height: 421px;
 	background: url("../images/Overhaul.jpg");
 }
-.img-designer_repair{
+@media screen and (max-width: 376px) {
+	.img-overhaul {
+		width: 340px;
+		height: 365px;
+	}
+}
+.img-designer_repair {
 	background-size: cover;
 	width: 392px;
 	height: 421px;
 	background: url("../images/Designer Repair.jpg");
+}
+@media screen and (max-width: 376px) {
+	.img-designer_repair {
+		width: 340px;
+		height: 365px;
+	}
 }
 /*стили блока карточек с типами ремонтов */
 .constract__block {
@@ -637,6 +1014,13 @@ color: #363636;
 	flex-direction: column;
 	align-items: center;
 	max-width: 376px;
+}
+@media screen and (max-width: 376px) {
+	.constract__block {
+		align-items: start;
+		max-width: 340px;
+		height: 484px;
+	}
 }
 /*стили кнопки блока карточек с типами ремонтов */
 .constract__button {
@@ -646,12 +1030,27 @@ color: #363636;
 	font-family: "Yeseva One";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 25px;
 	text-transform: uppercase;
 	background: #e3b873;
 	box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 	color: #ffffff;
+}
+@media screen and (max-width: 376px) {
+	.constract__button {
+		align-items: start;
+		width: 230px;
+		height: 40px;
+		background: #e3b873;
+		box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+		margin-bottom: 60px;
+		margin-top: 16px;
+		font-size: 15px;
+		line-height: 138.6%;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
 }
 /*стили заголовка текстового блока карточек с типами ремонтов */
 .constract__head {
@@ -662,6 +1061,16 @@ color: #363636;
 	line-height: 25px;
 	color: #363636;
 }
+@media screen and (max-width: 376px) {
+	.constract__head {
+		margin-left: -15px;
+		margin-bottom: 15px;
+		align-items: start;
+		font-size: 15px;
+		line-height: 138.6%;
+		color: #363636;
+	}
+}
 /*стили списка блока карточек с типами ремонтов */
 ul li {
 	list-style: disc;
@@ -671,6 +1080,16 @@ ul li {
 	font-size: 13px;
 	line-height: 27px;
 	color: #959595;
+}
+@media screen and (max-width: 376px) {
+	ul li {
+		font-family: "Nunito Sans";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 169.8%;
+		color: #959595;
+	}
 }
 /*стили текстового блока карточек с типами ремонтов */
 .constract__text-container {
@@ -684,21 +1103,35 @@ ul li {
 	justify-content: center;
 	padding: 15%;
 }
+@media screen and (max-width: 376px) {
+	.constract__text-container {
+		width: 270px;
+		height: 241px;
+	}
+}
+
 /* ------------------------------------------------------------------------------------------------ */
 /*стили секции call-the-measurer */
-.call-the-measurer{
+.call-the-measurer {
 	position: relative;
 	display: flex;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 376px) {
+	.call-the-measurer {
+		display: none;
+	}
 }
 /*стили фотонового изображения секции call-the-measurer */
-.background-image{
+.background-image {
 	margin-bottom: 151px;
 	background: url("../images/building.png");
 	width: 750px;
 	height: 600px;
 }
 /*стили ограничивающего контейнера формы ввода секции call-the-measurer */
-.call-the-measurer__form-container{
+.call-the-measurer__form-container {
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
@@ -708,7 +1141,7 @@ ul li {
 	width: 1100px;
 }
 /*стили формы секции call-the-measurer */
-.call-the-measurer__form{
+.call-the-measurer__form {
 	background: #181818;
 	width: 506px;
 	height: 509px;
@@ -716,47 +1149,47 @@ ul li {
 	flex-direction: column;
 }
 /*стили формы ввода имени секции call-the-measurer */
-.call-the-measurer__name-form{
+.call-the-measurer__name-form {
 	margin: auto;
 }
 /*стили заголовка формы секции call-the-measurer */
-.call-the-measurer__h3{
-width: 297px;
-font-family: 'Nunito Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
-text-align: center;
-color: #FFFFFF;
-margin: 28px auto 39px;
+.call-the-measurer__h3 {
+	width: 297px;
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	margin: 28px auto 39px;
 }
 /*отступы поля ввода телефона секции call-the-measurer */
-.call-the-measurer__phone{
+.call-the-measurer__phone {
 	margin: 48px auto;
 }
 /*стили поля ввода секции call-the-measurer */
-.call-the-measurer__input{
+.call-the-measurer__input {
 	width: 408px;
 	background: #181818;
 	border-bottom: 1px solid white;
-	font-family: 'Nunito Sans';
+	font-family: "Nunito Sans";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 23px;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 /*стили placeholder поля ввода секции call-the-measurer */
-.call-the-measurer__input::placeholder{
-	color:#ffffff;
+.call-the-measurer__input::placeholder {
+	color: #ffffff;
 }
 /*стили названия поля ввода секции call-the-measurer */
-.call-the-measurer__label{
+.call-the-measurer__label {
 	color: rgba(255, 255, 255, 0.5);
 }
 /*стили чекбокса секции call-the-measurer */
-.call-the-measurer__checkbox{
+.call-the-measurer__checkbox {
 	color: #ffffff;
 	display: flex;
 	max-width: 254px;
@@ -764,40 +1197,44 @@ margin: 28px auto 39px;
 	margin-bottom: 39px;
 }
 /*стили кнопки формы секции call-the-measurer */
-.call-the-measurer__button-form{
-width: 213px;
-height: 51px;
-background: #E3B873;
-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
-margin: auto 49px 27px 244px;
+.call-the-measurer__button-form {
+	width: 213px;
+	height: 51px;
+	background: #e3b873;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+	margin: auto 49px 27px 244px;
 }
 
 /* кастомные стили списка секции call-the-measurer */
 .call-the-mesurer__ol {
-	counter-reset: num; 
-	list-style: none; 
+	counter-reset: num;
+	list-style: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 80%;
 	font: 14px "Trebuchet MS", "Lucida Sans";
 	padding: 0;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
-	}
-	/* кастомные стили списка секции call-the-measurer */
-	.call-the-mesurer__ol li {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+/* кастомные стили списка секции call-the-measurer */
+.call-the-mesurer__ol li {
 	counter-increment: num;
 	position: relative;
 	display: block;
 	padding-left: 37px;
 	text-decoration: none;
-	border-radius: .3em;
-	transition: .3s ease-out;
-	}
-	/* кастомные стили списка секции call-the-measurer */
-	.call-the-mesurer__ol li:hover {background: #E9E4E0;}
-	.call-the-mesurer__ol li:hover:before {transform: rotate(360deg);}
-	.call-the-mesurer__ol li:before {
+	border-radius: 0.3em;
+	transition: 0.3s ease-out;
+}
+/* кастомные стили списка секции call-the-measurer */
+.call-the-mesurer__ol li:hover {
+	background: #e9e4e0;
+}
+.call-the-mesurer__ol li:hover:before {
+	transform: rotate(360deg);
+}
+.call-the-mesurer__ol li:before {
 	content: counter(li);
 	content: counter(num);
 	counter-increment: li;
@@ -809,56 +1246,60 @@ margin: auto 49px 27px 244px;
 	height: 50px;
 	width: 50px;
 	line-height: 2.5em;
-	color: #FFFFFF;
-	background: #E3B873;
-	border: 8px solid #FFFFFF;
+	color: #ffffff;
+	background: #e3b873;
+	border: 8px solid #ffffff;
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
 
 	text-align: center;
 	font-weight: bold;
 	border-radius: 2em;
-	transition: all .3s ease-out;
-	}
-	ol li:nth-child(-n+9):before {
-		content: "0" counter(num);
-	}
-
+	transition: all 0.3s ease-out;
+}
+ol li:nth-child(-n + 9):before {
+	content: "0" counter(num);
+}
 
 /* цвет фона для декоративного изображения секции call-the-measurer */
-.call-the-measurer__round-1{
-	background:#e3b873;
+.call-the-measurer__round-1 {
+	background: #e3b873;
 }
 /* стили закругления блока с декоративным изображением секции call-the-measurer */
-.call-the-measurer__round-1-img{
+.call-the-measurer__round-1-img {
 	transform: translate(45%, 50%);
 	background: url("../images/pig.png");
 	width: 40px;
 	height: 33px;
 }
 /* стили блока с текстом и декоративным изображением секции call-the-measurer */
-.call-the-measurer__circle-and-text{
+.call-the-measurer__circle-and-text {
 	display: flex;
 	align-items: center;
 	margin-top: 30px;
 	max-width: 441px;
 }
 /* стили текста блока с декоративным изображением секции call-the-measurer */
-.call-the-measurer__text{
+.call-the-measurer__text {
 	max-width: 220px;
-	font-family: 'Nunito Sans';
+	font-family: "Nunito Sans";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 26px;
-	color: #E3B873;
+	color: #e3b873;
 	text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
 /* ------------------------------------------------------------------------------------------------ */
 /* стили секции с отзывами */
-.our-clients{
+.our-clients {
 	margin-bottom: -150px;
 }
-.our-clients__img{
+@media screen and (max-width: 376px) {
+	.our-clients {
+		display: none;
+	}
+}
+.our-clients__img {
 	margin: 0 5px;
 	background: url("../images/hands.png");
 	background-size: cover;
@@ -879,24 +1320,24 @@ margin: auto 49px 27px 244px;
 	padding-top: 20px;
 	padding-left: 24px;
 	display: flex;
-	background: #ffffff
+	background: #ffffff;
 	align-items: center;
 }
 /* стили скругления контейнера с фотографией клиента блока с отзывами*/
 .round-1 {
 	margin-right: 23px;
-	width: 76px;/* Ширина и высота */
-	height: 76px; 
+	width: 76px; /* Ширина и высота */
+	height: 76px;
 	border-radius: 50%; /* Превращаем в круг */
 	background-size: auto 300px; /* Высота фотографии равна высоте элемента */
 }
-.fedosova-img{
+.fedosova-img {
 	background: url("../images/fedosova_marina_konstantinovna.png");
 }
-.afanasyev-img{
+.afanasyev-img {
 	background: url("../images/afanasyev_sergey_alexsandrovich.png");
 }
-.kiriev-img{
+.kiriev-img {
 	background: url("../images/kiriev_egor_leonidovich.png");
 }
 /* стили имени клиента блока с отзывами */
@@ -944,7 +1385,7 @@ margin: auto 49px 27px 244px;
 	transform: translate(0%, -50%);
 	display: flex;
 	justify-content: space-around;
-	font-family: 'Yeseva One';
+	font-family: "Yeseva One";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 17px;
@@ -957,8 +1398,8 @@ margin: auto 49px 27px 244px;
 	align-items: center;
 }
 /* стили изображения для блока с информацией о площади*/
-.img-area-1{
-	background: url("../images/area.png" );
+.img-area-1 {
+	background: url("../images/area.png");
 	background-size: cover;
 	width: 32px;
 	height: 31px;
@@ -971,17 +1412,16 @@ margin: auto 49px 27px 244px;
 	left: 50%;
 	margin-left: -3px;
 	top: 0;
-   border: 0.75px solid #FFFFFF;
-
+	border: 0.75px solid #ffffff;
 }
 /* стили контейнера для изображений блока с информацией о сроках */
-.list-days{
+.list-days {
 	display: flex;
 	align-items: center;
 }
 /* стили изображения для блока с информацией о сроках */
-.img-list-days-1{
-	background: url("../images/list-days.svg" );
+.img-list-days-1 {
+	background: url("../images/list-days.svg");
 	background-size: cover;
 	width: 32px;
 	height: 31px;
@@ -990,7 +1430,7 @@ margin: auto 49px 27px 244px;
 
 /* ------------------------------------------------------------------------------------------------ */
 /* стили специального ограничивающего контейнера секции с формой для дополнительных вопросов */
-.have-any-questions__container{
+.have-any-questions__container {
 	max-width: 883px;
 	height: 445px;
 	background: #181818;
@@ -999,17 +1439,33 @@ margin: auto 49px 27px 244px;
 	transform: translate(0%, 50%);
 	z-index: 2;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__img {
+		display: none;
+	}
+	.have-any-questions__img-right {
+		display: none;
+	}
+	.have-any-questions__container {
+		transform: translate(0%, 0%);
+	}
+}
 /* стили правого полупрозрачного изображения из секции для дополнительных вопросов */
-.have-any-questions__background-image{
+.have-any-questions__background-image {
 	display: flex;
-   justify-content: space-between;
+	justify-content: space-between;
 	position: absolute;
 	transform: translate(0%, 0%);
 	width: 100vw;
 	height: 10vh;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__background-image {
+		display: none;
+	}
+}
 /* стили левого полупрозрачного изображения из секции для дополнительных вопросов */
-.have-any-questions__img{
+.have-any-questions__img {
 	margin-top: 100px;
 	opacity: 0.06;
 	background: url("../images/have-any-questions-background.png");
@@ -1018,8 +1474,13 @@ margin: auto 49px 27px 244px;
 	width: 700px;
 	height: 400px;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__img {
+		display: none;
+	}
+}
 /* стили правого полупрозрачного изображения из секции для дополнительных вопросов */
-.have-any-questions__img-right{
+.have-any-questions__img-right {
 	margin-left: 4vw;
 	opacity: 0.06;
 	background: url("../images/have-any-questions-background-right.png");
@@ -1028,35 +1489,72 @@ margin: auto 49px 27px 244px;
 	width: 700px;
 	height: 500px;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__img-right {
+		display: none;
+	}
+}
 /* стили заголовка из секции для дополнительных вопросов */
-.have-any-questions__title{
+.have-any-questions__title {
 	padding-top: 35px;
 	text-align: center;
 	width: 256px;
 	margin: 0 auto;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__title {
+		padding-right: 30px;
+		margin: 0px 30px 50px 0px;
+		text-align: center;
+		width: 257px;
+	}
+}
 /* стили формы из секции для дополнительных вопросов */
-.have-any-questions__form{
+.have-any-questions__form {
 	max-width: 520px;
 	margin: 0 auto;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__form {
+		max-width: 375px;
+		padding: 0 19px;
+	}
+}
 /* стили полей ввода из секции для дополнительных вопросов */
-.have-any-questions__input{
+.have-any-questions__input {
 	background: #181818;
 	color: white;
 	border-bottom: 1px solid white;
-	font-family: 'Nunito Sans';
+	font-family: "Nunito Sans";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 23px;
-	color: #FFFFFF;
+	color: #ffffff;
+	width: 231px;
+}
+@media screen and (max-width: 376px) {
+	.have-any-questions__input {
+		width: 340px;
+		height: 45px;
+	}
+	#username.have-any-questions__input {
+		margin-bottom: 63px;
+	}
+}
+.input-question {
+	width: 516px;
+}
+@media screen and (max-width: 376px) {
+	.input-question {
+		width: 340px;
+	}
 }
 /* стили названий полей ввода из секции для дополнительных вопросов */
-.have-any-questions__label{
+.have-any-questions__label {
 	color: white;
 	background: #181818;
-	font-family: 'Nunito Sans';
+	font-family: "Nunito Sans";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 13px;
@@ -1064,22 +1562,35 @@ margin: auto 49px 27px 244px;
 	color: rgba(255, 255, 255, 0.5);
 }
 /* стили placeholder для полей ввода из секции для дополнительных вопросов */
-.have-any-questions__input::placeholder{
-	color: #FFFFFF;
+.have-any-questions__input::placeholder {
+	color: #ffffff;
 }
 /* стили блока  с полями ввода имени и телефона из секции для дополнительных вопросов */
-.have-any-questions__form-name-phone{
+.have-any-questions__form-name-phone {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 50px;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__form-name-phone {
+		display: flex;
+		flex-direction: column;
+	}
+}
 /* стили формы из секции для дополнительных вопросов */
-.have-any-questions__question-form{
+.have-any-questions__question-form {
 	margin-bottom: 47px;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__question-form {
+		width: 340px;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+}
 /* стили блока чекбокса из секции для дополнительных вопросов */
-.have-any-questions__checkbox{
+.have-any-questions__checkbox {
 	color: #ffffff;
 	display: flex;
 	max-width: 254px;
@@ -1087,37 +1598,53 @@ margin: auto 49px 27px 244px;
 	margin-bottom: 39px;
 }
 
-/* стили полей ввода из секции для дополнительных вопросов */
-.have-any-questions__input{
+@media screen and (max-width: 376px) {
+	.have-any-questions__checkbox {
+		width: 340px;
+		bottom: -12%;
+		left: 5%;
+		margin: 0 auto;
+	}
+} /* стили полей ввода из секции для дополнительных вопросов */
+.have-any-questions__input {
 	padding-top: 7px;
 	padding-bottom: 8px;
-	font-family: 'Nunito Sans';
+	font-family: "Nunito Sans";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 23px;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 /* дополнительные стили кнопки из секции для дополнительных вопросов*/
-.have-any-questions__button-form{
+.have-any-questions__button-form {
 	transform: translate(90%, 0%);
 	height: 51px;
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__button-form {
+		width: 340px;
+		left: 5%;
+		margin: 0 auto;
+		transform: translate(0%, 0%);
+		margin-top: 190px;
+	}
+}
 /* стили поля для вопроса из секции для дополнительных вопросов */
-.input-question{
+.input-question {
 	width: 100%;
 }
 /* стили текста чекбокса */
-.white-text{
+.white-text {
 	color: white;
 }
 /* ------------------------------------------------------------------------------------------------ */
 /* настройки контейнера изображений */
-.round-top{
+.round-top {
 	width: 28px;
 	height: 28px; /* Ширина и высота */
-	border-radius: 50%;/* Превращаем в круг */
-	background-color: #E3B873;
+	border-radius: 50%; /* Превращаем в круг */
+	background-color: #e3b873;
 	text-align: center;
 	margin-top: 26px;
 	margin-left: 15px;
@@ -1132,7 +1659,7 @@ margin: auto 49px 27px 244px;
 	background-size: cover;
 }
 /* изображение инстаграма */
-.round-insta{
+.round-insta {
 	transform: translate(45%, 40%);
 	background: url("../images/insta.png");
 	background-repeat: no-repeat;
@@ -1141,37 +1668,56 @@ margin: auto 49px 27px 244px;
 	background-size: cover;
 }
 /* настройка блока ссылок на социальные сети */
-.hero-bottom__img{
+.hero-bottom__img {
 	display: flex;
-   margin-bottom: 43px;
+	margin-bottom: 43px;
 }
 /* адрес */
-.hero-bottom__title{
+.hero-bottom__title {
 	display: block;
 	max-width: 590px;
 	padding-top: 274px;
 	margin: 0 auto;
 	margin-bottom: 32px;
+	grid-area: a;
+}
+@media screen and (max-width: 376px) {
+	.hero-bottom__title {
+		width: 340px;
+		/* padding-top: 0px; */
+	}
 }
 /* стили перекрытия */
-.hero-bottom-container{
+.hero-bottom-container {
 	position: relative;
 	z-index: 1;
 }
+@media screen and (max-width: 376px) {
+	.hero-bottom-container {
+		display: grid;
+		max-width: 340px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 2, 1fr;
+		grid-template-areas:
+			"b"
+			"a";
+		padding: 0auto;
+	}
+}
 /* стили h3 секции с контактными данными */
-.hero-bottom__text{
+.hero-bottom__text {
 	width: auto;
-	font-family: 'Yeseva One';
+	font-family: "Yeseva One";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 28px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #E3B873;
+	color: #e3b873;
 }
 /* стили тонирующего блока */
-.hero-bottom-overlay{
+.hero-bottom-overlay {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -1181,26 +1727,37 @@ margin: auto 49px 27px 244px;
 	background-color: rgba(0, 0, 0, 0.9);
 }
 /* стили фонового изображения блока с контактными данными */
-.hero-bottom{
+.hero-bottom {
 	background-image: url("../images/maps-background.jpg");
 	display: flex;
 	height: auto;
 	padding-top: 0;
-
 }
 /* ------------------------------------------------------------------------------------------------ */
 /* встроенная карта*/
-.map-box{
+.map-box {
 	filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
 	max-width: 925px;
 	height: 462px;
 	margin-bottom: 66px;
+	grid-area: b;
+}
+@media screen and (max-width: 376px) {
+	.map-box {
+		max-width: 340px;
+		height: 255px;
+	}
 }
 /* ------------------------------------------------------------------------------------------------ */
 /* настройки подвала */
-.footer{
+.footer {
 	height: 133px;
 }
-.footer-content{
+@media screen and (max-width: 376px) {
+	.footer {
+		display: none;
+	}
+}
+.footer-content {
 	transform: translate(0%, 35%);
 }
