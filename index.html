@@ -360,7 +360,11 @@
 			<!-- специальный ограничивающий контейнер о видеонаблюдении за ремонтом -->
 			<div class="camera-control__conteiner">
 				<!-- изображение секции -->
-				<div class="camera-control__img "></div>
+				<div class="camera-control__img"></div>
+				<!-- изображение кнопки play -->
+				<div class="camera-control__round-play">
+					<div class="camera-control__img-play"></div>
+				</div>
 				<!-- декоративная линия -->
 				<span class="line-camera"></span>
 				<!-- параграф -->
@@ -556,11 +560,83 @@
 		</section>
 
 		<!--_______________________________________________________________________________________________________________________-->
+		<section class="we-relize-section">
+			<div class="we-relize ">
+				<div class="container we-relize__container-home">
+					<div class="we-relize__title-list">
+						<div class="we-relize__title">
+							<h2 class="we-relize__title-h2">We realize your
+								wildest fantasies</h2>
+							<ul>
+								<li class="we-relize__li">American classic</li>
+								<li class="we-relize__li">Empire</li>
+								<li class="we-relize__li">Classical</li>
+								<li class="we-relize__li">Loft</li>
+								<li class="we-relize__li">Minimalism</li>
+								<li class="we-relize__li">Provence</li>
+								<li class="we-relize__li">Romanticism</li>
+								<li class="we-relize__li">Scandinavian style</li>
+								<li class="we-relize__li">Mediterranean style</li>
+								<li class="we-relize__li">High tech</li>
+								<li class="we-relize__li">Eclecticism</li>
+							</ul>
+						</div>
+					</div>
+					<div class="we-relised__images-bloks">
+						<div class="we-relised__images-blok-1">
+							<div class="we-relised__left-top"></div>
+							<div class="we-relised__left-bottom"></div>
+						</div>
+						<div class="we-relised__images-blok-2">
+							<div class="we-relised__right-top"></div>
+							<div class="we-relised__right-bottom"></div>
+						</div>
+					</div>
+				</div>
+				<!--блок затемнения изображения-->
+				<div class="we-relised-overlay"></div>
+				<!--____________________________________________-->
+
+			</div>
+		</section>
+		<section class="hidden-section">
+			<h2 class="we-relize__title-h2-375">We realize your
+				wildest fantasies</h2>
+			<div class="we-relised__slider-container container">
+				<div class="we-relised__slider">
+					<div class="we-relised__slider-block">
+						<input class="we-relised__slider-input" type="radio" id="we-relised__slider-1"
+							name="we-relised__slider" aria-hidden="true" hidden="" checked="checked">
+						<div class="we-relised__slider-image slider-image-1">
+
+						</div>
+						<input class="we-relised__slider-input " type="radio" id="we-relised__slider-2"
+							name="we-relised__slider" aria-hidden="true" hidden="">
+						<div class="we-relised__slider-image slider-image-2">
+
+						</div>
+						<input class="we-relised__slider-input" type="radio" id="we-relised__slider-3"
+							name="we-relised__slider" aria-hidden="true" hidden="">
+						<div class="we-relised__slider-image slider-image-3">
+
+						</div>
+						<label for="we-relised__slider-3" class="prev-next-wr prev-wr sl-1-wr">‹</label>
+						<label for="we-relised__slider-2" class="prev-next-wr next-wr sl-1-wr">›</label>
+						<label for="we-relised__slider-1" class="prev-next-wr prev-wr sl-2-wr">‹</label>
+						<label for="we-relised__slider-3" class="prev-next-wr next-wr sl-2-wr">›</label>
+						<label for="we-relised__slider-2" class="prev-next-wr prev-wr sl-3-wr">‹</label>
+						<label for="we-relised__slider-1" class="prev-next-wr next-wr sl-3-wr">›</label>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--_______________________________________________________________________________________________________________________-->
 
 		<!--секция с отзывами наших клиентов -->
 		<section class="our-clients">
 			<!--повторяющийся заголовок -->
-			<div class=" title-repeat">
+			<div class="title-repeat">
 				<h3 class="title-repeat__text __black">our clients</h3>
 				<div class="title-repeat__top">
 					<span class="line"></span>
@@ -705,9 +781,9 @@
 			<!-- специальный ограничивающий контейнер секции с формой для дополнительных вопросов-->
 			<div class="have-any-questions__container">
 				<!--заголовок-->
-				<div class="title-repeat">
-					<h3 class="title-repeat__text __white have-any-questions__title">have any questions?</h3>
-				</div>
+
+				<h3 class=" __white have-any-questions__title">have any questions?</h3>
+
 				<!--форма секции с формой для дополнительных вопросов-->
 				<div class="have-any-questions__form">
 					<form class="have-any-questions__form-name-phone" action="#">
@@ -749,43 +825,36 @@
 
 		<!--секция с контактными данными-->
 		<section class="hero hero-bottom">
-			<div class="container hero-bottom-container">
+			<div class="hero-bottom-container">
 				<!--адрес-->
 				<div class="hero-bottom__title">
-					<h3 class=" hero-bottom__text">Rostov-on-Don, Nansen St., 239 Shopping Center
+					<h3 class="hero-bottom__text">Rostov-on-Don, Nansen St., 239 Shopping Center
 						Decorum Tel +7 (928) 768 32 29</h3>
 					<!-- блок со ссылками на соцсети -->
-					<div class="title-repeat__top">
-						<div class="hero-bottom__img">
-							<div class="round-top">
-								<a href="">
-									<div class="round-mail">
-									</div>
-								</a>
-							</div>
-							<div class=" round-top">
-								<a href="">
-									<div class="round-insta">
-									</div>
-								</a>
-							</div>
+
+				</div>
+				<div class="title-repeat__top">
+					<div class="hero-bottom__img">
+						<div class="round-top">
+							<a href="">
+								<div class="round-mail">
+								</div>
+							</a>
+						</div>
+						<div class=" round-top">
+							<a href="">
+								<div class="round-insta">
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
 				<!-- блок со встроенной картой -->
 				<div class="map-box">
-					<div style="position:relative;overflow:hidden;"><a
-							href="https://yandex.ru/maps/org/dekorum/1113729703/?utm_medium=mapframe&utm_source=maps"
-							style="color:#eee;font-size:12px;position:absolute;top:0px;">Декорум</a><a
-							href="https://yandex.ru/maps/39/rostov-na-donu/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
-							style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в
-							Ростове‑на‑Дону</a><a
-							href="https://yandex.ru/maps/39/rostov-na-donu/category/sale_and_lease_of_commercial_real_estate/184107521/?utm_medium=mapframe&utm_source=maps"
-							style="color:#eee;font-size:12px;position:absolute;top:28px;">Продажа и аренда коммерческой
-							недвижимости в Ростове‑на‑Дону</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUjb2QPCC"
-							width="925" height="462" frameborder="1" allowfullscreen="true"
-							style="position:relative;"></iframe>
-					</div>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555126231886!2d39.720990815251426!3d47.244847220891224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1671371594675!5m2!1sru!2sru"
+						width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
 			<div class="hero-bottom-overlay"></div>

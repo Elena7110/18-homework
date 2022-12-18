@@ -97,6 +97,7 @@ h6 {
 	font-family: Nunito Sans, Arial;
 	background-color: #e5e5e5;
 }
+
 .__white {
 	color: white;
 }
@@ -526,7 +527,6 @@ h6 {
 	width: 679px;
 	grid-column: 2;
 	grid-row: 1 /4;
-	border: 1px solid rgb(255, 217, 0);
 	grid-area: d;
 }
 @media screen and (max-width: 376px) {
@@ -633,7 +633,7 @@ h6 {
 }
 @media screen and (max-width: 376px) {
 	.prev-next.next {
-		left: 242px;
+		left: 257px;
 		position: absolute;
 		top: -130px;
 		background: url("../images/right375.png") no-repeat center;
@@ -698,6 +698,12 @@ h6 {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
+	grid-area: c;
+}
+@media screen and (max-width: 376px) {
+	.title-repeat__top {
+		max-width: 340px;
+	}
 }
 /* стили повторяющихся заголовков*/
 .title-repeat__text {
@@ -757,10 +763,44 @@ h6 {
 }
 @media screen and (max-width: 376px) {
 	.camera-control__img {
-		max-width: 340px;
+		width: 340px;
 		height: 206px;
 		background-size: cover;
-		margin-left: 11px;
+		margin: 0 auto;
+		margin-top: -240px;
+	}
+}
+/* стили изображения кнопки play секции online control */
+.camera-control__round-play {
+	background-color: #e3b873;
+	width: 85px;
+	height: 85px;
+	margin-top: -265px;
+	margin-bottom: 175px;
+	margin-left: 45%;
+	border-radius: 50%;
+}
+.camera-control__img-play {
+	width: 21px;
+	height: 25px;
+	transform: translate(33px, 30px);
+	background: url("../images/play.png") no-repeat center;
+	background-size: cover;
+}
+@media screen and (max-width: 376px) {
+	.camera-control__round-play {
+		width: 35px;
+		height: 35px;
+		background-size: cover;
+		margin-left: 45%;
+		margin-bottom: 113px;
+		margin-top: -118px;
+	}
+	.camera-control__img-play {
+		width: 9px;
+		height: 11px;
+		transform: translate(15px, 11px);
+		background-size: contain;
 	}
 }
 /* стили декоративного элемента секции online control */
@@ -874,12 +914,12 @@ h6 {
 }
 @media screen and (max-width: 376px) {
 	.button-form {
+		text-align: center;
 		flex-direction: column;
+		padding: 15px 144.5px;
 		position: absolute;
-		top: 85%;
+		top: 95%;
 		left: 5%;
-		margin: 0px auto;
-		margin-top: 45px;
 		width: 340px;
 		height: 51px;
 		font-family: "Nunito Sans";
@@ -1290,6 +1330,271 @@ ol li:nth-child(-n + 9):before {
 	text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
 /* ------------------------------------------------------------------------------------------------ */
+/* стили секции we-relize */
+.we-relize-section {
+	margin-top: 242px;
+	height: 864px;
+	margin-bottom: 110px;
+	position: relative;
+	background-image: url("../images/we-rlize-background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@media screen and (max-width: 376px) {
+	.we-relize-section {
+		display: none;
+	}
+}
+/* стили ограничевающего контейнера секции we-relize */
+.we-relize__container-home {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.we-relize__title-list {
+	margin-top: 134px;
+	width: 299px;
+}
+.we-relize__title-h2 {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #e3b873;
+	margin-bottom: 47px;
+}
+@media screen and (max-width: 376px) {
+	.we-relize__title-h2-375 {
+		font-family: "Yeseva One";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 138.6%;
+		/* or 30px */
+		align-content: center;
+		border: 1px solid;
+		text-transform: uppercase;
+		width: 230px;
+		margin: 0 auto;
+		color: #e3b873;
+	}
+}
+li.we-relize__li {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 38px;
+	color: #ffffff;
+	list-style-type: none;
+	height: 24px;
+	margin-bottom: 23px;
+}
+li.we-relize__li:hover {
+	color: #e3b873;
+	text-decoration: underline;
+}
+.we-relised__images-bloks {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: end;
+}
+.we-relised__images-blok-1 {
+	display: flex;
+	flex-direction: column;
+}
+.we-relised__left-top {
+	background-image: url("../images/we-rlize-left-top.png");
+	background-size: cover;
+	width: 354px;
+	height: 557px;
+	margin-top: -41px;
+	margin-bottom: 40px;
+}
+.we-relised__left-bottom {
+	background-image: url("../images/we-rlize-left-bottom.png");
+	background-size: cover;
+	width: 354px;
+	height: 350px;
+}
+.we-relised__right-top {
+	background-image: url("../images/we-rlize-right-top.png");
+	background-size: cover;
+	width: 354px;
+	height: 275px;
+	margin-top: -112px;
+}
+.we-relised__right-bottom {
+	background-image: url("../images/we-rlize-left-bottom.png");
+	background-size: cover;
+	width: 354px;
+	height: 625px;
+	margin-top: 41px;
+}
+.we-relised-overlay {
+	content: "";
+	background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/* .we-relised__slider-container {
+	display: block;
+	width: 340px;
+	height: 242px;
+	margin: 0 auto;
+} */
+.hidden-section {
+	display: none;
+}
+.we-relised__slider {
+	margin: 0 auto;
+	position: relative;
+	/* box-shadow: 0px 0px 10px rgba(167, 167, 167, 0.71); */
+	margin-top: 26px;
+	/* border-radius: 20px; */
+	width: 340px;
+	height: 242px;
+}
+@media screen and (max-width: 376px) {
+	.we-relised__slider-container {
+		display: block;
+		height: 276px;
+		width: 375px;
+	}
+	.hidden-section {
+		display: block;
+		width: 375px;
+		height: 332px;
+		margin-bottom: -120px;
+		/* z-index: 2; */
+	}
+	.we-relised__slider {
+		margin-top: 0px;
+		z-index: 1;
+	}
+}
+.we-relised__slider-block {
+	position: relative;
+	overflow: hidden;
+	/* width: 100%; */
+	/* margin-top: -500px; */
+	/* border-radius: 20px; */
+}
+@media screen and (max-width: 376px) {
+	.we-relised {
+		height: 276px;
+		width: 375px;
+	}
+
+	.we-relised__slider-input:checked + .we-relised__slider-image {
+		position: static;
+		opacity: 100;
+	}
+
+	.we-relised__slider-image {
+		position: absolute;
+		opacity: 0;
+		-webkit-transition: opacity 0.6s ease-out;
+		transition: opacity 0.6s ease-out;
+	}
+
+	.we-relised__slider-image img {
+		display: block;
+		height: auto;
+		max-width: 100%;
+	}
+
+	.prev-next-wr {
+		background: #e3b873;
+		border-radius: 50%;
+		color: white;
+		cursor: pointer;
+		display: none;
+		font-size: 40px;
+		height: 40px;
+		line-height: 35px;
+		position: absolute;
+		top: 56%;
+		-webkit-transform: translate(0, -50%);
+		cursor: pointer;
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		text-align: center;
+		width: 40px;
+		z-index: 10;
+	}
+
+	.prev-next-wr.prev-wr {
+		left: 2%;
+	}
+
+	.prev-next-wr.next-wr {
+		right: 2%;
+	}
+
+	.prev-next-wr:hover {
+		background: #e3b873;
+		color: white;
+	}
+
+	#we-relised__slider-1:checked ~ .sl-1-wr,
+	#we-relised__slider-2:checked ~ .sl-2-wr,
+	#we-relised__slider-3:checked ~ .sl-3-wr {
+		display: block;
+	}
+}
+
+.we-relised__slider-bullet {
+	/* color: #393939; */
+	cursor: pointer;
+	display: block;
+	font-size: 35px;
+}
+
+.we-relised__slider:hover {
+	color: #fff;
+}
+
+#we-relised__slider-1:checked ~ .sl-1-wr ~ .esamon-getusa li:nth-child(1) .we-relised__slider,
+#we-relised__slider-2:checked ~ .sl-2-wr ~ .esamon-getusa li:nth-child(2) .we-relised__slider,
+#we-relised__slider-3:checked ~ .sl-3-wr ~ .esamon-getusa li:nth-child(3) .we-relised__slider {
+	color: #99f6ff;
+}
+
+.we-relised__slider-image {
+	height: 242px;
+	width: 340px;
+	/* grid-column: 2; */
+	/* grid-row: 1 /4; */
+	/* border: 1px solid rgb(255, 217, 0); */
+	grid-area: d;
+}
+.slider-image-1 {
+	background-size: cover;
+	background-image: url("../images/we-rlize-left-bottom.png");
+}
+.slider-image-2 {
+	background-size: cover;
+	background-image: url("../images/we-rlize-background.png");
+}
+.slider-image-3 {
+	background-size: cover;
+	background-image: url("../images/we-rlize-right-top.png");
+}
+@media screen and (max-width: 376px) {
+	.we-relised__slider-image {
+		padding-top: 241px;
+		margin-top: 34px;
+		width: 340px;
+	}
+}
+/* ------------------------------------------------------------------------------------------------ */
 /* стили секции с отзывами */
 .our-clients {
 	margin-bottom: -150px;
@@ -1430,9 +1735,11 @@ ol li:nth-child(-n + 9):before {
 
 /* ------------------------------------------------------------------------------------------------ */
 /* стили специального ограничивающего контейнера секции с формой для дополнительных вопросов */
+.have-any-questions {
+	margin-top: -173px;
+}
 .have-any-questions__container {
 	max-width: 883px;
-	height: 445px;
 	background: #181818;
 	margin: 0 auto;
 	position: relative;
@@ -1440,14 +1747,15 @@ ol li:nth-child(-n + 9):before {
 	z-index: 2;
 }
 @media screen and (max-width: 376px) {
-	.have-any-questions__img {
-		display: none;
-	}
-	.have-any-questions__img-right {
-		display: none;
-	}
 	.have-any-questions__container {
+		background: #252525;
 		transform: translate(0%, 0%);
+		z-index: -1;
+		padding-bottom: 100px;
+	}
+	.have-any-questions {
+		margin-top: -121px;
+		z-index: 2;
 	}
 }
 /* стили правого полупрозрачного изображения из секции для дополнительных вопросов */
@@ -1500,24 +1808,33 @@ ol li:nth-child(-n + 9):before {
 	text-align: center;
 	width: 256px;
 	margin: 0 auto;
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 13px;
 }
 @media screen and (max-width: 376px) {
 	.have-any-questions__title {
-		padding-right: 30px;
-		margin: 0px 30px 50px 0px;
+		margin: 0 auto;
+		margin-bottom: 50px;
 		text-align: center;
-		width: 257px;
+		width: 267px;
+		padding-top: 173px;
 	}
 }
 /* стили формы из секции для дополнительных вопросов */
 .have-any-questions__form {
+	text-align: center;
 	max-width: 520px;
 	margin: 0 auto;
 }
 @media screen and (max-width: 376px) {
 	.have-any-questions__form {
-		max-width: 375px;
-		padding: 0 19px;
+		width: 340px;
 	}
 }
 /* стили полей ввода из секции для дополнительных вопросов */
@@ -1535,11 +1852,13 @@ ol li:nth-child(-n + 9):before {
 }
 @media screen and (max-width: 376px) {
 	.have-any-questions__input {
+		background: #252525;
 		width: 340px;
 		height: 45px;
 	}
 	#username.have-any-questions__input {
 		margin-bottom: 63px;
+		max-width: 340px;
 	}
 }
 .input-question {
@@ -1547,7 +1866,7 @@ ol li:nth-child(-n + 9):before {
 }
 @media screen and (max-width: 376px) {
 	.input-question {
-		width: 340px;
+		max-width: 340px;
 	}
 }
 /* стили названий полей ввода из секции для дополнительных вопросов */
@@ -1561,12 +1880,18 @@ ol li:nth-child(-n + 9):before {
 	line-height: 21px;
 	color: rgba(255, 255, 255, 0.5);
 }
+@media screen and (max-width: 376px) {
+	.have-any-questions__label {
+		background: #252525;
+	}
+}
 /* стили placeholder для полей ввода из секции для дополнительных вопросов */
 .have-any-questions__input::placeholder {
 	color: #ffffff;
 }
 /* стили блока  с полями ввода имени и телефона из секции для дополнительных вопросов */
 .have-any-questions__form-name-phone {
+	text-align: left;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -1576,17 +1901,19 @@ ol li:nth-child(-n + 9):before {
 	.have-any-questions__form-name-phone {
 		display: flex;
 		flex-direction: column;
+		width: 340px;
+		z-index: 0;
+		margin-bottom: 63px;
 	}
 }
 /* стили формы из секции для дополнительных вопросов */
 .have-any-questions__question-form {
+	text-align: left;
 	margin-bottom: 47px;
 }
 @media screen and (max-width: 376px) {
 	.have-any-questions__question-form {
-		width: 340px;
-		margin: 0 auto;
-		padding-bottom: 50px;
+		max-width: 340px;
 	}
 }
 /* стили блока чекбокса из секции для дополнительных вопросов */
@@ -1596,14 +1923,13 @@ ol li:nth-child(-n + 9):before {
 	max-width: 254px;
 	margin-top: 16px;
 	margin-bottom: 39px;
+	z-index: 14px;
 }
 
 @media screen and (max-width: 376px) {
 	.have-any-questions__checkbox {
-		width: 340px;
-		bottom: -12%;
+		margin-top: -25px;
 		left: 5%;
-		margin: 0 auto;
 	}
 } /* стили полей ввода из секции для дополнительных вопросов */
 .have-any-questions__input {
@@ -1618,16 +1944,15 @@ ol li:nth-child(-n + 9):before {
 }
 /* дополнительные стили кнопки из секции для дополнительных вопросов*/
 .have-any-questions__button-form {
-	transform: translate(90%, 0%);
+	margin-top: 50px;
+	width: 200px;
 	height: 51px;
+	margin-bottom: 34px;
 }
 @media screen and (max-width: 376px) {
 	.have-any-questions__button-form {
 		width: 340px;
-		left: 5%;
-		margin: 0 auto;
-		transform: translate(0%, 0%);
-		margin-top: 190px;
+		margin-top: -19px;
 	}
 }
 /* стили поля для вопроса из секции для дополнительных вопросов */
@@ -1639,6 +1964,24 @@ ol li:nth-child(-n + 9):before {
 	color: white;
 }
 /* ------------------------------------------------------------------------------------------------ */
+/* стили фонового изображения блока с контактными данными */
+.hero-bottom {
+	background-image: url("../images/maps-background.jpg");
+	background-size: cover;
+	display: flex;
+	height: auto;
+	padding-bottom: 30px;
+}
+@media screen and (max-width: 376px) {
+	.hero-bottom-overlay {
+		display: none;
+	}
+	.hero-bottom {
+		background: #252525;
+		z-index: 1;
+		margin: 0 auto;
+	}
+}
 /* настройки контейнера изображений */
 .round-top {
 	width: 28px;
@@ -1651,7 +1994,7 @@ ol li:nth-child(-n + 9):before {
 }
 /* изображение почты */
 .round-mail {
-	transform: translate(45%, 60%);
+	transform: translate(45%, 50%);
 	background: url("../images/mail.png");
 	background-repeat: no-repeat;
 	width: 15px;
@@ -1676,32 +2019,45 @@ ol li:nth-child(-n + 9):before {
 .hero-bottom__title {
 	display: block;
 	max-width: 590px;
-	padding-top: 274px;
+	padding-top: 102px;
 	margin: 0 auto;
 	margin-bottom: 32px;
 	grid-area: a;
 }
 @media screen and (max-width: 376px) {
 	.hero-bottom__title {
-		width: 340px;
-		/* padding-top: 0px; */
+		max-width: 340px;
+		padding-top: 0px;
+		margin: 0 auto;
+		font-family: "Yeseva One";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 138.6%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #e3b873;
 	}
 }
 /* стили перекрытия */
 .hero-bottom-container {
 	position: relative;
+	margin: 0 auto;
 	z-index: 1;
 }
 @media screen and (max-width: 376px) {
 	.hero-bottom-container {
+		margin: 0 auto;
 		display: grid;
 		max-width: 340px;
 		grid-template-columns: 1fr;
-		grid-template-rows: 2, 1fr;
+		grid-template-rows: 3, 1fr;
 		grid-template-areas:
 			"b"
-			"a";
-		padding: 0auto;
+			"a"
+			"c";
+		padding: 0 auto;
+		z-index: 1;
 	}
 }
 /* стили h3 секции с контактными данными */
@@ -1716,6 +2072,19 @@ ol li:nth-child(-n + 9):before {
 	text-transform: uppercase;
 	color: #e3b873;
 }
+@media screen and (max-width: 376px) {
+	.hero-bottom__text {
+		font-family: "Yeseva One";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 138.6%;
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #e3b873;
+	}
+}
 /* стили тонирующего блока */
 .hero-bottom-overlay {
 	content: "";
@@ -1725,26 +2094,22 @@ ol li:nth-child(-n + 9):before {
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 0;
 }
-/* стили фонового изображения блока с контактными данными */
-.hero-bottom {
-	background-image: url("../images/maps-background.jpg");
-	display: flex;
-	height: auto;
-	padding-top: 0;
-}
+
 /* ------------------------------------------------------------------------------------------------ */
 /* встроенная карта*/
 .map-box {
-	filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
-	max-width: 925px;
-	height: 462px;
+	width: 985px;
+	height: 526px;
 	margin-bottom: 66px;
 	grid-area: b;
+	z-index: 1;
 }
+
 @media screen and (max-width: 376px) {
 	.map-box {
-		max-width: 340px;
+		width: 340px;
 		height: 255px;
 	}
 }
