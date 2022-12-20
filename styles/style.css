@@ -1211,6 +1211,7 @@ h6 {
 		left: 14px;
 		position: absolute;
 		top: -130px;
+		border-radius: 50%;
 		background: url("../images/left375.svg") no-repeat center;
 	}
 }
@@ -1235,13 +1236,14 @@ h6 {
 
 .prev-next.next {
 	left: 39%;
+	border-radius: 50%;
 	background: url("../images/next.svg") no-repeat center;
 	z-index: 12;
 }
 
 @media screen and (max-width: 925px) {
 	.prev-next.next {
-		left: 510px;
+		left: 520px;
 		position: absolute;
 		top: -130px;
 		background: url("../images/right375.svg") no-repeat center;
@@ -3491,7 +3493,7 @@ li.we-relize__li:hover {
 @media screen and (max-width: 769px) {
 	.have-any-questions__checkbox {
 		margin-top: -25px;
-		left: 16%;
+		left: 0%;
 	}
 }
 
@@ -3546,7 +3548,6 @@ li.we-relize__li:hover {
 @media screen and (max-width: 595px) {
 	.have-any-questions__button-form {
 		width: 340px;
-		margin-top: -20px;
 	}
 }
 
